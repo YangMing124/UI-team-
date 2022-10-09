@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/cal.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div id="all">
+        <div id="body">
+            <input type="text" id="show"readonly="readonly">
+            <input type="button" value="AC" onclick="Clear(this);" class="number1">
+            <input type="button" value="DEL" onclick="Delete(this);" class="number1">
+            <input type="button" value="1" onclick="Button(this);" class="number">
+            <input type="button" value="2" onclick="Button(this);" class="number">
+            <input type="button" value="3" onclick="Button(this);" class="number">
+            <input type="button" value="+" onclick="Do(this);" class="number">
+            <input type="button" value="4" onclick="Button(this);" class="number">
+            <input type="button" value="5" onclick="Button(this);" class="number">
+            <input type="button" value="6" onclick="Button(this);" class="number">
+            <input type="button" value="-" onclick="Do(this);" class="number">
+            <input type="button" value="7" onclick="Button(this);" class="number">
+            <input type="button" value="8" onclick="Button(this);" class="number">
+            <input type="button" value="9" onclick="Button(this);" class="number">
+            <input type="button" value="*" onclick="Do(this);" class="number">
+            <input type="button" value="." onclick="Button(this);" class="number">
+            <input type="button" value="0" onclick="Button(this);" class="number">
+            <input type="button" value="=" onclick="To(this);" class="number">
+            <input type="button" value="/" onclick="Do(this);" class="number">
+        </div> 
+    </div>
+    <script src="js/calcu.js"></script>
+</body>
+</html>

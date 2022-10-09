@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#all{
+    height: 600px;
+    width: 900px;
+    background-color: ghostwhite;
+    margin: auto;
+}
+.hah{
+    width: 130px;
+    height: 35px;
+    margin: 6px;
+}
+#display{
+    width: 900px;
+    height: 550px;
+    background-color: rgb(194, 223, 136);
+}
+#d{
+    height: 100px;
+    width: 100px;
+    margin-left: 10px;
+    background-color: rgb(236, 175, 236);
+    display: inline-block;
+    font-size: 25px;
+    line-height: 100px;
+    text-align: center;
+}

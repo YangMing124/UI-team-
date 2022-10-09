@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/inmain.css">
+    <link href="css/style.css" rel="stylesheet" type="text/css" /> 
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_u4qz1594lnixusor.css">
+    <link rel="stylesheet" type="text/css" href="css/detail_p.css">
+    <title>Speak Yourself</title>
+</head>
+<style>
+    a{
+        text-decoration: none;
+    }
+</style>
+<body>
+    <div id="whole">
+        <div id="headline">
+            <a href="inner.html"><div id="title"><img src="image/title.jpg" alt=""></div></a>
+            <div id="mainpage"><a href="userpage.html" class="mp">我的</a></div>
+            <div id="finder"><a href="find.html" class="find">发现</a></div>
+            <div id="myself"><a href="inner.html" class="mine">首页</a></div>
+        </div>
+        <div id="mainbody">
+             <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image:url(image/photo1.jpg);height:140%;width:90%"></div>
+                <div class="swiper-slide" style="background-image:url(image/photo2.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(image/photo8.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(image/photo4.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(image/photo5.jpg)"></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination swiper-pagination-blck"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next swiper-button-black"></div>
+                <div class="swiper-button-prev swiper-button-black"></div>
+            </div>
+            <div id="intro">
+                 <div id="logoa"><img src="image/logo.jpg" alt="" class="logioa"></div>
+                <p class="lecture">由联合国儿童基金会组织的"无限一代"活动，旨在呼吁各国，努力加大对10到20多岁年轻人的投</p>
+                <p class="lecture">资，给予他们更多机会。Speak Yourself 即是响应号召，为众多年轻创业者提供机会的平台。</p>
+            </div>
+            <div id="video">
+                <!--视频的-->
+                <div class="videos">
+                        <!--bottom-->
+                        <div class="video_b" style="margin-top:0">
+                            <div class="video_b_in">
+                                <div class="video_ls">
+                                    <video id="vids">
+                                    您的浏览器不支持h5标签,请升级或换个浏览器
+                                    </video>
+                                    <!--暂停-->
+                                    <div id="pass">
+                                        <img src="media/zt.png">
+                                    </div>
+                                    <!--控制器-->
+                                    <div class="controls">
+                                        <!--进度条容器-->
+                                        <div id="pBar">
+                                            <!--进度条底色-->
+                                            <div class="pBar_bj">
+                                                <!--缓冲的进度条-->
+                                                <div id="buff"></div>
+                                                <!--进度条动态-->
+                                                <div id="pBar_move">
+                                                    <!--进度条按钮-->
+                                                    <div id="pBtn"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--展厅播放快进快退音量全屏-->
+                                        <div class="trol_list">
+                                            <!--暂停和快进快退-->
+                                            <div class="list_1">
+                                                <i class="iconfont icon-kuaitui-copy" onClick="ktui()"></i>
+                                                <i class="iconfont icon-zanting2" id="ztbf"></i>
+                                                <i class="iconfont icon-kuaijin" onClick="kjin()"></i>
+                                            </div>
+                                            <!--音量-->
+                                            <div class="voice">
+                                                <i class="iconfont icon-yinliang" style="float:left;"></i>
+                                                <div class="voicep">
+                                                    <div id="vBar">
+                                                        <div id="vBar_in"></div>
+                                                    </div>
+                                                    <div id="vBtn"></div>
+                                                </div>
+                                            </div>
+                                            <!--时间-->
+                                            <div class="vtime">
+                                                <font id="nTime">00:00:00</font>/<em id="aTime">00:00:00</em>
+                                            </div>
+                                            <!--全屏-->
+                                            <i id="qp" class="iconfont icon-quanping"></i>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div id="separate"><img src="image/footie.jpg" alt="" class="sep"></div>
+            <div id="intro_c"><img src="image/t1.jpg" alt="" class="t1"></div>
+            <div id="company">
+                <div class="every_c">
+                    <div class="company_name">深圳市创新投资集团有限公司</div>
+                    <div class="company_pic"><img src="image/c1.png" alt="" class="c1"></div>
+                    <div class="company_intro">深创投是中国本土规模最大、运营管理最成功的风险投资机构之一。截至2017年9月底，深创投已经投资了792个项目，其中129家投资企业分别在全球16个资本市场上市。
+                            2017年开年至今，深创投投资企业就有21家上市（18家IPO，3家并购上市）。频繁的上市/成功退出证明了深创投的非一般实力。</div>
+                </div>
+                <div class="every_c">
+                    <div class="company_name">IDG技术创业投资基金</div>
+                    <div class="company_pic"><img src="image/c2.png" alt="" class="c2"></div>
+                    <div class="company_intro">作为最早进入中国的外资投资基金，IDG资本已经在中国深耕了24年，投资企业超过600家，上市/成功退出的企业超过150家，退出成功率高达25%，远高于整个行业的退出成功率。
+                        其中，腾讯、百度、小米、搜狐、携程、奇虎360等项目的成功投资无不彰显这一老牌风险投资机构的雄厚实力。</div>
+                </div>
+                <div class="every_c">
+                    <div class="company_name">红杉资本中国基金</div>
+                    <div class="company_pic"><img src="image/c3.jpg" alt="" class="c3"></div>
+                    <div class="company_intro">红杉资本中国基金2005年进入中国。在这12年的发展中，红杉资本中国基金凭借其精准的眼光、对行业趋势的前瞻性判断以及迅猛的动作，成功投资了京东、奇虎360、蚂蚁金服、滴滴出行、点评美团、饿了么等企业。
+                        这一系列成功的投资奠定了红杉资本中国基金的霸主地位。</div>
+                </div>
+            </div>
+            <div id="separate"><img src="image/footie.jpg" alt="" class="sep"></div>
+            <div id="intro_c"><img src="image/t2.jpg" alt="" class="t1"></div>
+            <div id="worker">
+                <div class="every_w">
+                    <div class="worker_name">郭俊</div>
+                    <div class="worker_pic"><img src="image/1-1.jpg" alt="" class="w1"></div>
+                    <div class="worker_intro">2006年以604分的优异成绩考上郑州大学生物工程系。4年后，大学毕业的他本可以留在一个不错的科研单位工作，但是，
+                        他却做出了让人吃惊的选择。喜欢思考的郭俊发现了羊粪里的商机，就改行做起了有机肥，带来百万商机。
+                        </div>
+                </div>
+                <div class="every_w">
+                    <div class="worker_name">陈实</div>
+                    <div class="worker_pic"><img src="image/1-2.jpg" alt="" class="w2"></div>
+                    <div class="worker_intro">靠着1000元生活费起家，Speak Yourself帮他将业务拓展到了北上广、深圳、长沙等地，并在当地寻找一些分包的公司。
+                        随着一个个项目的完成，陈实也为自己积累了不少人脉，如今通过他和他团队的努力，公司实现了年收入1500万
+                        </div>
+                </div>
+                <div class="every_w">
+                    <div class="worker_name">广州高校的19名大学生</div>
+                    <div class="worker_pic"><img src="image/1-3.jpg" alt="" class="w3"></div>
+                    <div class="worker_intro">边读书边开理发店，豪言要颠覆高校及周边的传统理发体验，打造中国高校第一个互联网理发体验平台。这个通过Speak Yourself
+                        打造的“发学院”创业项目，在短短半年时间筹集到了超过100万元的资金。</div>
+                </div>
+                <div class="every_w">
+                    <div class="worker_name">冯杨</div>
+                    <div class="worker_pic"><img src="image/1-4.jpg" alt="" class="w4"></div>
+                    <div class="worker_intro">公司主创为四名拥有相同爱好的在校大学生，94年的冯杨则是创始人兼CEO。虽然起步很早，但是在如今这个人人必谈VR、AR的时代，这支年轻的创业队伍在Speak Yourself的帮助下：上线3天突破100万点击。
+                        </div>
+                </div>
+            </div>
+            <a href="#0" class="cd-top">Top</a>
+            <div id="footer"><img src="image/footie.jpg" alt="" class="footie"></div>
+            <div id="foot"><img src="image/lastfoot.jpg" alt="" class="lastfoot"></div>
+        </div>
+    </div>
+</body>
+<script src="js/swiper.min.js"></script>
+<script src="js/js.js"></script>
+<script src="js/jquery-1.12.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script>
+    /*获取控制对象*/	
+    var vids=document.getElementById("vids");
+    var sskd=$(".controls").width();/*替换原来的764*/
+    /*一开始默认的视频路径（每个页面都会有一个默认的视频吧）*/
+    var csdz="media/";
+    /*这一步判断他是什么浏览器，调用不同的格式的视频（这里以mp4为例子）*/
+    var xzdz="mov_bbb.mp4";
+    vids.src=csdz+xzdz;
+    /*点击右边的话替换左边视频的地址链接以及替换播放器的名字*/
+    $(".one_tb").click(function(){
+        $(this).addClass("on").siblings(".one_tb").removeClass("on");
+        var hName=$(this).find("h3").html();
+        var vid_src=$(this).attr("vid_src");
+        $(".title_top").html(hName);
+        vids.src=vid_src+xzdz;
+        vids.play();
+        })
+    /*点击暂停图标的时候*/		
+    $("#pass").click(function(){
+        $(this).css({display:"none"});
+        $("#ztbf").attr("class","iconfont icon-zanting")
+        vids.play();
+        });
+    /*点击控制按钮里面的暂停图标的时候*/	
+    $("#ztbf").click(function(){	
+        if(vids.paused){
+            vids.play()
+            $("#ztbf").attr("class","iconfont icon-zanting")
+            }else{
+                vids.pause()
+                $("#ztbf").attr("class","iconfont icon-zanting2")
+                }
+    })
+    /*不论任何途径只要是暂停或者播放*/
+    vids.onplay=function(){
+        $("#pass").css({display:"none"});
+        $("#ztbf").attr("class","iconfont icon-zanting");
+        }
+    vids.onpause=function(){
+        $("#pass").css({display:"block"});
+        $("#ztbf").attr("class","iconfont icon-zanting2");
+        $("#pBar").on('mouseup',function(){
+                $(this).off('mousemove')
+                })
+        }
+    /*时间转换器*/
+    function numFormat(time){
+        time = parseInt(time);
+        var h = addZero(Math.floor(time/3600));
+        var  m = addZero(Math.floor((time%3600)/60));
+        var s = addZero(Math.floor(time%60));
+        return h+":"+m+":"+s;
+    }
+    function addZero(num){
+        if(num<10){
+            return "0"+num;
+        }else{
+            return ''+num;
+        }
+    }
+    /*当前时间/总的时间(canplay方法开始)*/
+    vids.oncanplay=function(){
+    var aTime=numFormat(vids.duration);
+    $("#aTime").html(aTime);
+    /*第一步,进度条跟着时间动(鼠标点下的时候)*/
+    vids.ontimeupdate=function(){
+        sskd=$(".controls").width()
+        var hc=(vids.buffered.end(0)/vids.duration)*sskd;
+        $("#buff").css({width:hc+'px'})
+        var nTime=numFormat(vids.currentTime);
+        $("#nTime").html(nTime);
+        /*当前的时间比上总的时间乘以总的长度*/
+        var nLengh=(vids.currentTime/vids.duration)*(sskd-20);
+        $("#pBar_move").css({width:nLengh+'px'});
+        }
+    /*第二步,点击时的进度条*/
+    $("#pBar").mousedown(function(e){
+        var cLk=e.clientX;/*点击距离(点击在进度条区域)*/
+        var pJl=$("#pBar").offset().left;/*获取进度条距离左边的距离*/	
+        var mLengh=cLk-pJl;/*移动的距离*/
+        if(mLengh>=(sskd-20)){
+            mLengh=(sskd-20)
+            }
+        $("#pBar_move").css({width:mLengh+'px'});/*改变进度条的距离*/
+        var cTime1=mLengh/(sskd-20)*vids.duration;
+        vids.currentTime=cTime1;
+        var cTime2=numFormat(cTime1);
+        $("#nTime").html(cTime2);/*改变html的显示时间*/
+        vids.play();
+    /*---------------------------------鼠标拖拽的距离---------------------------------------*/
+        $(document).on('mousemove',function(e){
+            vids.pause();
+            var newLeft=e.clientX-pJl;/*拖拽的距离*/
+            if(newLeft<=0){
+                newLeft=0;
+            }
+            if(newLeft>=(sskd-20)){
+                newLeft=(sskd-20)
+                }
+            var cTime3=newLeft/(sskd-20)*vids.duration;
+            var cTime4=numFormat(cTime3);
+            $("#pBar_move").css({width:newLeft+'px'});
+            vids.currentTime=cTime3;
+            $("#nTime").html(cTime4);
+            })/*拖拽结束*/
+    /*----------------------------------鼠标松开----------------------------------------*/
+            $("body").on('mouseup',function(){
+                $(document).off('mousemove');
+                vids.play();
+                })/*松开结束*/
+        })/*mousedown方法结束*/
+    }/*(canplay方法结束)*/
+    /*----------------------------------快进快退(点击html的时候)----------------------------------*/	
+    function ktui(){
+        vids.currentTime-=10;
+    }
+    function kjin(){
+        vids.currentTime+=10;
+    }
+    /*----------------------------------快进快退(点击键盘的时候)----------------------------------*/
+    $(document).keydown(function (event) {
+        if (event.keyCode===37){
+            vids.currentTime-=10;
+        }
+        if (event.keyCode===39){
+            vids.currentTime+=10;
+        }
+        /*----暂停播放(点击键盘空格的时候)----*/
+        if (event.keyCode===32){
+            if(vids.paused){
+            vids.play()
+            $("#ztbf").attr("class","iconfont icon-zanting")
+            }else{
+                vids.pause()
+                $("#ztbf").attr("class","iconfont icon-zanting2")
+                }
+        }
+        /*-----------退出全屏-----------*/
+        if (event.keyCode===27){
+            $(".video_ls").removeClass("on");
+            $(".controls").css({width:"764px"})
+        }
+    })
+    /*鼠标双击事件(双击播放器然后全屏)*/
+    $(".video_ls").dblclick(function(){
+        $(".video_ls").addClass("on");
+        var oBox=$("body").width()-66;
+        $(".controls").css({width:oBox+'px'})
+    });
+    /*全屏播放按钮*/
+    $("#qp").click(function(){
+        if($(".video_ls").hasClass("on")){
+            $(".video_ls").removeClass("on");
+            $(".controls").css({width:"764px"})
+            }else{
+                $(".video_ls").addClass("on");
+                var oBox=$("body").width()-66;
+                $(".controls").css({width:oBox+'px'})
+                }
+    })	
+    /*音量加减*/
+    vBtn.onmousedown = function(ev){
+        var ev=ev||window.event;
+        var xs=ev.clientX - this.offsetLeft;
+        document.onmousemove = function(ev){
+            var newLefts=ev.clientX-xs;
+            if(newLefts<=0){
+                newLefts=0;
+            }else if(newLefts>=vBar.offsetWidth-vBtn.offsetWidth){
+                newLefts=vBar.offsetWidth-vBtn.offsetWidth;
+            }
+            vBtn.style.left=newLefts+"px";
+            vBar_in.style.width =(newLefts+8)+"px";
+            var prop=newLefts/(vBar.offsetWidth-vBtn.offsetWidth);
+            vids.volume =prop;
+            //静音改变音量图标
+            if(!vids.volume){
+                icon.style.backgroundImage="url(images/iconb.png)"
+            }else{
+                icon.style.backgroundImage="url(images/icona.png)"
+            }
+        }
+        document.onmouseup = function(){
+        document.onmousemove = null;
+        document.onmouseup = null;
+        }
+    }	
+</script>
+</html>

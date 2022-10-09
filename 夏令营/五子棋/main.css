@@ -1,0 +1,25 @@
+body{
+    position:relative;
+}
+.chess{
+    border:4px solid #ccc;
+    display:block;
+    margin:20px auto;
+    background-color:#aaaaaa;
+}
+.chessA{
+    display:block;
+    position:absolute;
+    padding:0px;
+    box-sizing:border-box;
+    top:0px;
+    left:50%;
+    transform:translateX(-50%);
+    background-color:transparent;
+}
+.command{
+    text-align: center;
+}
+.command button{
+    margin-left:15px;
+}

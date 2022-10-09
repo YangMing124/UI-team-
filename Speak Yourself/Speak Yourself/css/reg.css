@@ -1,0 +1,184 @@
+#whole{
+    width: 100%;
+    height: 700px;
+    /* background: rgb(245, 245, 245); */
+    background-image: url("../image/bg.jpg");
+}
+#headline{
+    width: 100%;
+    height: 66px;
+    background: #fff;
+}
+#login{
+    width: 100px;
+    height: 100%;
+    background: #fff;
+    float: right;
+    text-align: center;
+    line-height: 60px;
+    position: relative;
+    top: -65px;
+    left: -36px;
+}
+#registered{
+    width: 100px;
+    height: 100%;
+    background: #fff;
+    float: right;
+    text-align: center;
+    line-height: 60px;
+    position: relative;
+    top: -65px;
+    left: -36px;
+}
+.logi{
+    font-size: 20px;
+    color: #ccc;
+    transition: color 1s ease;
+    
+}
+.logi:hover{
+    color: rgb(133, 133, 133);
+}
+.reg{
+    font-size: 20px;
+    color: #ccc;
+    transition: color 1s ease;
+}
+.reg:hover{
+    color: rgb(133, 133, 133);
+}
+#foot{
+    width: 900px;
+    height: 110px;
+    margin: 0 auto;
+    background: #fff;
+}
+.footie{
+    width: 100%;
+}
+
+
+
+
+
+.middle{
+    width: 900px;
+    height: 500px;
+    background-color: white;
+    margin: 0 auto;
+    position: relative;
+    top: -10px;
+}
+.leftpart{
+    width: 500px;
+    height: 80%;
+    border-right: 1px solid #ccc;
+    position: relative;
+    top: 20px;
+}
+.flower{
+    position: relative;
+    left: 5px;
+    top: 5px;
+}
+.log{
+    font-size: 30px;
+    color: #ccc;
+    position: relative;
+    left: 150px;
+    top: 10px;
+}
+.email{
+    width: 200px;
+    height: 30px;
+    position: relative;
+    left: 150px;
+    top: 50px;
+}
+.nick{
+    width: 200px;
+    height: 30px;
+    position: relative;
+    left: -60px;
+    top: 100px;
+}
+.password{
+    width: 200px;
+    height: 30px;
+    position: relative;
+    left:150px;
+    top: 110px;
+}
+.check1{
+    color: #ccc;
+    position: relative;
+    left: 150px;
+    top: 130px;
+}
+.check2{
+    color: #ccc;
+    position: relative;
+    left: 200px;
+    top: 110px;
+}
+.sure{
+    background-color: cadetblue;
+    font-size: 20px;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    position: relative;
+    left: 150px;
+    top: 100px;
+    transition: background 1s ease;
+}
+.imme{
+    color: white;
+    position: relative;
+    left: 33px;
+    top: 10px;
+    transition: color 1s ease;
+}
+.sure:hover{
+    background:#fff;
+}
+.imme:hover{
+    color: cadetblue;
+}
+.last{
+    color: #ccc;
+    position: relative;
+    left: 150px;
+    top: 110px;
+}
+.yet{
+    font-size: 20px;
+    color: #ccc;
+    position: relative;
+    left: 550px;
+    top: -320px;
+}
+.alright{
+    color: cadetblue;
+}
+.more{
+    color: #ccc;
+    font-size: 16px;
+    position: relative;
+    left: 550px;
+    top: -310px;
+}
+.sprint{
+    position: relative;
+    left: 550px;
+    top: -300px;
+}
+.tips{
+    width: 230px;
+}
+.search{
+    position: relative;
+    left: 900px;
+    top: -102px;
+}

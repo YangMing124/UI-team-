@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var result="";
+    function Node(data){
+        this.data=data;
+        this.parent=null;
+        this.children=[];
+    }
+    function Tree(){
+        this.root=new Node("root");
+        this.Find=Find;
+        this.change=change;
+        this.dele=dele;
+        this.searchall=searchall;
+        this.insert=insert;
+    }
+    function Find(node,data){
+        if(data==node.data&&node){
+            result=node;
+        }
+        if(data!=node.data&&node){
+            for(var i=0;i<node.children.length;i++){
+                Find(node.children[i],data);
+            }
+        }
+    }
+    function insert(node,data){
+        Find(this.root,node);
+        var nodea=new Node(data);
+        result.children.push(nodea);
+        nodea.parent=result;
+        console.log(this.root);
+        result="";
+    }
+    function change(node,data){
+        Find(this.root,node);
+        for(var i=0;i<result.parent.children.length;i++){
+            if(result.parent.children[i].data==node){
+                result.parent.children[i].data=data;
+            }
+        }
+        console.log(this.root);
+    }
+    function searchall(node){
+        // Find(this.root,node);
+        if(result){
+            for(var i=0;i<result.children.length;i++){
+                searchall(result.children[i]);
+                // searchall(node.parent);
+            }
+        }
+        console.log(this.root);
+    }
+    function dele(node){
+        Find(this.root,node);
+        for(var i=0;i<result.children.length;i++){
+            if(result.parent.children[i].data==node){
+                result.parent.children.splice(i,1);
+            }
+        }
+        console.log(this.root);
+    }
+    var p=new Tree();
+    p.insert("root",1);
+    p.insert("root",2);
+    p.insert("root",3);
+    p.insert(1,5);
+    p.insert(1,4);
+    p.change(4,6);
+    p.dele(1);
+    // p.searchall("root");
+</script>
+</html>

@@ -1,0 +1,233 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#all{
+    margin: 0 auto;
+    width: 1262px;
+    height: 760px;
+    background-color: rgb(242,240,240);
+}
+#header{
+    margin: 0 auto;
+    width: 1262px;
+    height: 55px;
+}
+.webo{
+    background-image: url(pic/webo.png);
+    background-repeat: no-repeat;
+    background-size: 80px 16px;
+    width: 84px;
+    height: 23px;
+    position: relative;
+    left: 222px;
+    top: 24px;
+}
+.logo{
+    background-image: url(pic/logo.png);
+    background-repeat: no-repeat;
+    background-size: 110px 40px;
+    width: 120px;
+    height: 80px;
+    position: relative;
+    left: 560px;
+    top: -15px;
+}
+.qq{
+    background-image: url(pic/qq.png);
+    background-repeat: no-repeat;
+    background-size: 140px 24px;
+    width: 140px;
+    height: 40px;
+    position: relative;
+    left: 885px;
+    top: -100px;
+}
+.lefthead{
+    color: rgb(108, 108, 108);
+    font-family: 黑体;
+    font-size: 13px;
+    position: relative;
+    left: 165px;
+    top: -84px;
+}
+#head{
+    margin: 0 auto;
+    width: 1262px;;
+    height: 40px;
+    background-color: rgb(255, 116, 161);
+}
+.sreach{
+    size: 10px;
+    color: black;
+    background-color: rgb(242,240,240);
+    position: relative;
+    left: 310px;
+}
+.goto{
+    font-family: 黑体;
+    color: white;
+    font-size: 13px;
+    margin: 4px;
+}
+.goto1{
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    position: relative;
+    left: 165px;
+}
+.goto1:hover{
+    background-color: rgb(245,58,124);
+}
+.enroll{
+    background-image: url(pic/zhuce.png);
+    background-repeat: no-repeat;
+    background-size: 35px 24px;
+    width: 35px;
+    height: 25px;
+    position: relative;
+    left: 1026px;
+    top: -140px;
+}
+.login{
+    background-image: url(pic/denlu.png);
+    background-repeat: no-repeat;
+    background-size: 35px 24px;
+    width: 35px;
+    height: 25px;
+    position: relative;
+    left: 1061px;
+    top: -165px;
+}
+#contect{
+    margin: 0 auto;
+    width: 940px;
+    height: 660px;
+    background-color: white;
+}
+#left{
+    height: 100%;
+    width: 529px;
+}
+#right{
+    height: 100%;
+    width: 408px;
+    position: relative;
+    left: 531px;
+    top: -960px;
+}
+#line{
+    height: 300px;
+    width: 3px;
+    background-color: rgb(216, 213, 213);
+    position: relative;
+    left: 528px;
+    top: -530px;
+}
+.top{
+    width: 75%;
+    height: 160px;
+    border-bottom: 1px dashed rgb(167, 167, 167);
+    position: relative;
+    left: 20%;
+}
+.word{
+    font-family: 黑体;
+    font-size: 27px;
+    color: rgb(108, 108, 108);
+    position: relative;
+    top: 110px;
+}
+.title{
+    color: rgb(108, 108, 108);
+    width: 200px;
+    height: 30px;
+    position: relative;
+    left: 100px;
+    top: 50px;
+}
+.pass{
+    color: rgb(108, 108, 108);
+    width: 200px;
+    height: 30px;
+    position: relative;
+    top: 120px;
+    left: -160px;
+}
+.check{
+    height: 15px;
+    width: 15px;
+    position: relative;
+    left: 105px;
+    top: 150px;
+}
+.remember{
+    font-size: 13px;
+    color: rgb(108, 108, 108);
+    position: relative;
+    left: 110px;
+    top: 148px;
+}
+#now{
+    border-radius: 7px;
+    height: 50px;
+    width: 150px;
+    background-color: rgb(255, 116, 161);
+    position: relative;
+    left: 100px;
+    top: 170px;
+}
+#now:hover{
+    background-color: rgb(245,58,124);
+    cursor: pointer;
+}
+.now{
+    font-size: 17px;
+    color: white;
+    position: relative;
+    left: 40px;
+    top: 12px;
+}
+.forget{
+    color: rgb(255, 116, 161);
+    font-size: 15px;
+    position: relative;
+    left: 260px;
+    top: 130px;
+}
+.forget:hover{
+    color: rgb(252, 26, 105);
+    cursor: pointer;
+}
+.use{
+    position: relative;
+    top: 150px;
+    left: 10px;
+}
+#lo{
+    color: rgb(255, 116, 161);
+    position: relative;
+    top: 150px;
+    left: 30px;
+}
+#lo:hover{
+    cursor: pointer;
+    color: rgb(250, 25, 104);
+}
+.other{
+    position: relative;
+    top: 180px;
+    left: -187px;
+    font-size: 13px;
+}
+.qiguai{
+    height: 100px;
+    width: 280px;
+    background-image: url(pic/qiguai.png);
+    background-repeat: no-repeat;
+    position: relative;
+    left: 10px;
+    top: 200px;
+}
+

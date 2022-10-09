@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+     //1.构造栈
+     function Stack(){
+        this.data=[];
+        this.top=0;//栈顶并赋值为0
+        this.push=push;//入栈
+        this.pop=pop;//出栈
+        this.peek=peek;//获取栈顶的第一个元素(top是栈顶元素的上一个无内容)
+        this.length=length;//记录栈内元素个数
+        this.clear=clear;//清空栈
+    }
+    function peek(){
+        return this.data[this.top-1];
+    }
+    function push(element){
+        this.data[this.top++]=element;
+    }
+    function pop(){
+        return this.data[--this.top];
+    }
+    function length(){
+        return this.top;
+    }
+    function clear(){
+        this.top=0;
+    }
+    //比较优先级
+    function Sign(a,b){
+        var sign = new Array();
+                        // +   -   *    /    (    )   #
+        sign[0] = new Array('1','1','-1','-1','-1','1','1');   //+
+        sign[1] = new Array('1','1','-1','-1','-1','1','1');   //-
+        sign[2] = new Array('1','1','1','1','-1','1','1');     //*
+        sign[3] = new Array('1','1','1','1','-1','1','1');     ///
+        sign[4] = new Array('-1','-1','-1','-1','-1','0','');  //(
+        sign[5] = new Array('1','1','1','1','','1','1');       //)
+        sign[6] = new Array('-1','-1','-1','-1','-1','','0');  //#
+        var str = ['+','-','*','/','(',')','#'];
+        var str1;
+        var str2;
+        for(var i=0;i<7;i++){
+            if(a == str[i]){
+                str1 = i;
+            }
+            if(b == str[i]){
+                str2 = i;
+            }
+        }
+        var count = sign[str1][str2];
+        return count;
+    }
+    //3.中缀转后缀函数
+    function Change(item){
+        var str=item;
+        var stack=new Stack();//构造一个新的栈
+        stack.push("#");//将#压入栈
+        var queue=new Array();//构造一个队列
+        var float="";//一个空的字符串存小数
+        var flag=1;//在碰到符号前最后一次计算
+        for(var i=0;i<item.length;i++)
+        {
+            if(!isNaN(str[i])||str[i]=='.')//如果是数字或者小数点进入
+            {
+                if(!isNaN(str[i+1])||str[i+1]=='.'||flag==1)
+                {
+                    float+=str[i];
+                    flag=1;
+                    if(isNaN(str[i+1])&&str[i+1]!='.'){
+                        float=parseFloat(float);
+                        queue.push(float);
+                        float="";
+                        flag=0;
+                    }
+                }
+                else{
+                    queue.push(str[i]);
+                }
+            }
+            else{
+                if(str[i]=='(')//左括号直接入栈
+                {
+                    stack.push(str[i]);
+                }
+                else if(str[i]==')')
+                {
+                    while(stack.peek() != "(" )
+                    {
+                        queue.push(stack.pop());
+                    }
+                    stack.pop();//删除左括号
+                }
+                else{
+                    var compare=Sign(stack.peek(),str[i]);
+                    if(compare==-1)
+                        stack.push(str[i]);
+                    else{
+                        do{
+                            queue.push(stack.pop());
+                        }while(Sign(stack.peek(),str[i])>0);
+                        stack.push(str[i]);
+                    }
+                }
+            }
+        }
+        return(queue);
+    }
+    //后缀表达式计算
+    function cout(item){
+        var str=item;
+        var outStack=new Stack();
+        for(var i=0;i<item.length;i++)
+        {
+            if(!isNaN(str[i]))//数字入栈
+            {
+                outStack.push(str[i]);
+            
+            }
+            else{
+                var str1=parseFloat(outStack.pop());//遇到符号将栈顶的数字弹出
+                var str2=parseFloat(outStack.pop());//后弹出的在前先弹出的在后
+                switch(str[i]){
+                    case '+': outStack.push(str2+str1);
+                    break;
+                    case '-': outStack.push(str2-str1);
+                    break;
+                    case '*': outStack.push(str2*str1);
+                    break;
+                    case '/': outStack.push(str2/str1);
+                    break;
+                }
+            }
+        }
+        return(outStack.peek());
+    }
+//    中缀表达式计算
+    function Mcout(item){
+        var str=item;
+        var middle=new Stack();//符号栈
+        middle.push("#");
+        var num=new Array();//数字队列
+        var float="";//一个空的字符串存小数
+        var flag=0;//在碰到符号前最后一次计算
+        for(var i=0;i<item.length;i++)
+        {
+            if(!isNaN(parseInt(str[i])))//数字入栈
+            {
+                num.push(parseInt(str[i]));
+            }
+            else{
+                if(str[i]=='('){
+                    middle.push(str[i]);
+                }
+                else if(str[i]==')'){
+                    while(middle.peek()!='('){
+                        var st1=num.pop();
+                        var st2=num.pop();
+                        var gue=middle.pop();
+                        switch(gue){
+                            case '+': num.push(str2+str1);
+                            break;
+                            case '-': num.push(str2-str1);
+                            break;
+                            case '*': num.push(str2*str1);
+                            break;
+                            case '/': num.push(str2/str1);
+                            break;
+                        }
+                    }
+                    middle.pop();
+                }
+                else{
+                    var change=Sign(middle.peek(),str[i]);
+                    if(change==-1){
+                        middle.push(str[i]);
+                    }
+                    else{
+                        do{
+                            var str1=parseFloat(num.pop());
+                            var str2=parseFloat(num.pop());
+                            var guess=middle.pop();
+                            switch(guess){
+                                case '+': num.push(str2+str1);
+                                break;
+                                case '-': num.push(str2-str1);
+                                break;
+                                case '*': num.push(str2*str1);
+                                break;
+                                case '/': num.push(str2/str1);
+                                break;
+                            }
+                        }while(Sign(middle.peek(),str[i])>0);
+                        middle.push(str[i])
+                    }
+                }
+            }
+        }
+        console.log(num.pop().toFixed(4));
+    }
+    var result=Change('2*3+(4+3)-6/2');
+    console.log(result);
+   console.log(cout(result));
+    Mcout('2+3*(3+4-2)#');
+</script>
+</html>

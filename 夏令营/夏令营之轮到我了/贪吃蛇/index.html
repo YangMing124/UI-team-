@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>贪吃蛇</title>
+</head>
+<body onload="Snake.init();">
+<h1>贪吃蛇</h1>
+
+<table id="main" border="1" cellspacing="0" cellpadding="0"></table>
+<div id="Btn">
+<input type="button" id="btn" value="开始/暂停" />点左边按钮或按Enter开始/暂停游戏
+<input type="button" id="reset" value="重新开始" /><br />
+<input type="button" id="upSpeed" value="加速" />点左边按钮或按Ctrl + ↑加速<br />
+<input type="button" id="downSpeed" value="减速" />点左边按钮或按Ctrl + ↓减速
+</div>
+<script>
+    var start = document.getElementById('btn');
+    var res = document.getElementById('reset');
+    var up = document.getElementById('upSpeed');
+    var down = document.getElementById('downSpeed');
+    start.onclick = function(){
+    if(Snake.paused){
+      Snake.move();
+      Snake.paused = false;
+    }
+    else{
+      Snake.pause();
+      Snake.paused = true;
+    }
+  };
+  res.onclick = function(){
+    Snake.restart();
+    this.blur();
+  };
+  up.onclick = function(){
+    Snake.speedUp(-20);
+  };
+  down.onclick = function(){
+    Snake.speedUp(20);
+  };
+</script>
+</body>
+<script src="snake.js"></script>
+</html>

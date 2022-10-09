@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function node(data){
+        var data=data;
+        var next=null;
+    }
+    function list(){
+        this.head = new node("head");
+        this.head.next = this.head; //初始化让头的next指向自己
+        this.find = find;
+        this.insert = insert;
+        this.show = show;
+        this.findPrevious =findPrevious;
+        this.remove = remove;
+ 
+        this.nodegame = nodegame;
+        this.kill = kill;
+    }
+    function findPrevious(item){
+        var currNode = this.head;
+        while(!(currNode.next==null)&&(currNode.next.element != item)){
+            currNode = currNode.next;
+        }
+        return currNode;
+    }
+    function remove(item){
+        var prevNode = this.findPrevious(item);
+        if(!(prevNode.next==null)){
+            curtNode = prevNode.next;
+            prevNode.next = prevNode.next.next;
+            curtNode = null;
+        }
+    }
+    function show(){
+        var currNode = this.head;
+        while(!(currNode == null) && !(currNode.next.element == 'head')){
+            console.log(currNode.next.element);
+            currNode =currNode.next;
+        }
+    }
+    function find(item){
+        var currNode = this.head;
+        while(currNode.element!=item){
+            currNode =currNode.next;
+        }
+        return currNode;
+    }
+    function insert(newElement,item){
+        var newNode = new Node(newElement);
+        var current = this.find(item); 
+        newNode.next = current.next;
+        current.next = newNode;
+        var lastNode = this.findLast();  
+            lastNode.next = this.head;  
+    }
+    function nodegame(n,x){
+        var nNode = this.findLast();
+        for(var i=1;i<=n;i++){
+            this.insert(i,nNode.element);
+            nNode=nNode.next;
+        }
+        this.kill(n,x);
+        var result = this.findLast().element;
+        this.head.next = this.head;
+        return result;
+    }
+    function kill(num,n){
+        var count=num-1;
+        var currNode = this.head;
+        while(count){
+            for(var i=0;i<n;i++){
+                currNode=currNode.next;
+                if(currNode==this.head)currNode=currNode.next;
+            }
+            this.remove(currNode.element);
+            count--;
+        }
+    }
+    var gal = new list();
+    var result = game(7,2);
+    function game(playerNum,killNum){
+        return gal.nodegame(playerNum,killNum);
+    }
+    console.log(result);
+</script>
+</html>

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1.未进行初始化为undefined所以true
+        var message;
+        console.log(message == undefined);
+
+        // 2.当赋值为null时会返回一个object，null代表空对象指针
+        var car = null;
+        console.log(typeof car);
+        // undefined派生于null，仍然true
+        console.log(car == undefined);
+
+
+        // 3.布尔值为true和false，大写无效
+        // 返回true的：
+        // 数据类型：Boolean true; String 非空字符串; Number:任何非零数字;
+        //          Object 任何对象; Undefined N/A(不适用)
+        // 返回false的：
+        // 数据类型：Boolean false; String "";Number 0,NAN;Object null;
+        //          Undefined undefined;
+
+        // 4.
+        // 浮点数值：
+        var floatNum=1.1;
+        var floatNum2=3.33e4;//科学计数法
+        console.log(floatNum);
+        console.log(floatNum2);
+        // 超出范围为Infinity 5e324~1.797e+308;
+        // NAN:非数值，表示应返回数值的操作数未返回
+
+
+        console.log(isNaN(NaN));//true
+        console.log(isNaN("10"));//false 可以被转化为数字
+        console.log(isNaN("blue"));//true 不可以转
+        console.log(isNaN(10));//false 数字
+        console.log(isNaN(true));//false 可变为1
+
+
+        
+        // 5.数制转换
+        // Number();parseInt();parseFloat();
+        //number用于任何数据类型，后两种专门转字符串，对于同样的输入输出不同
+        
+        // Number()转换规则：
+        // Boolean true为1 false为0
+        // null返回0
+        // undefined返回NaN
+        // 字符串规则：
+        //     只包含数字，转换为十进制 "1"=1 "011"=011
+        //     如果包含浮点则为浮点数值同样忽略0
+        //     包含十六进制 "0xf"转为大小相同十进制
+        //     空则为0
+        //     除上述外任何字符都为NaN
+            
+        var num1 = Number("Hello");
+        var num2 = Number("");
+        var num3 = Number("0000111");
+        var num4 = Number(true);
+        console.log(num1);
+        console.log(num2);
+        console.log(num3);
+        console.log(num4);
+
+        // parseInt转换空字符串会返回NaN，会在字符串中找到整数
+        // 0x开头则为16进制，0开头加数字为8进制
+        var num11 = parseInt("1234blue");
+        var num12 = parseInt("");
+        var num13 = parseInt("0xA");
+        var num14 = parseInt("22.5");
+        var num15 = parseInt("070");
+        var num16 = parseInt("70");
+        var num17 = parseInt("0xf");
+        console.log(num11);
+        console.log(num12);
+        console.log(num13);
+        console.log(num14);
+        console.log(num15);
+        console.log(num16);
+        console.log(num17);
+        // 可指定
+        var numm = parseInt("AF",16);//0x可省略
+        console.log(numm);
+        // parseFloat只转换十进制，其他的为0，无小数点则返回整数
+        var num21 = parseFloat("123blue");
+        var num22 = parseFloat("0xA");
+        var num23 = parseFloat("0897.324");
+        console.log(num21);
+        console.log(num22);
+        console.log(num23);
+
+
+        // 6.字符串
+        var firstname = 'David';
+        var secondname = "Lucy";
+        console.log(firstname);
+        console.log(secondname);
+        //可拼接
+        var nameadd = 'Hong';
+        nameadd = nameadd + "Issac";
+        console.log(nameadd);
+        //toSring 转换成字符串
+        var age = 22;
+        console.log(age);
+        var agestring = age.toString();
+        console.log(agestring);
+        var age = 15;
+        var message = "我今年"+age+"岁了";
+        console.log(message);
+
+        // 7.object
+        var o = new Object();//创建对象
+
+        // 8.操作符
+        var age = 19;
+        var newage = age++;
+        var newage1 = --age+2;
+        console.log(newage);
+        console.log(newage1);
+
+        //9.全等和不全等
+        // ===为完全相等，包括类型，==只要不包括类型
+
+
+
+        // 引用类型
+        // 1.Object
+        var person = new Object();
+        person.name = 'Nira';
+        person.age = '24';
+
+        var person = {
+            name : 'Nira',
+            age : 24
+        }
+        // var person={} 等同于 var person = new Object();
+        console.log(person["name"]);
+        console.log(person.name);
+
+
+        
+        // 2.数组Array
+        var colors = new Array();
+        var colors = new Array(20);//长度为20的数组
+        var colors = new Array("red","green","blue");
+
+        var array=[];//创建一个空数组
+
+
+        console.log(colors[0]);
+        colors[2]='black';
+        console.log(colors);
+        console.log(colors.length);
+        colors.length = 2;
+        console.log(colors);
+        colors.length = 3;
+        console.log(colors);
+        console.log(colors[2]);
+        colors[colors.length] = 'brown';
+        console.log(colors);
+
+        console.log(Array.isArray(colors));//检测是否为数组
+
+        console.log(colors.join(":"));//join接受一个参数作为分隔符
+
+        // 转换方法
+        console.log(colors.toString());//逗号分隔字符串
+        console.log(colors.valueOf());//数组
+
+        //其他
+        // 重排序：sort  升序
+        var a = [1,5,75,2,6];
+        a.sort();
+        console.log(a);
+
+        //降序 reverse();
+        a.reverse();
+        console.log(a);
+
+
+
+
+
+        //slice();，基于当前数组的一个或者多个项创建一个新数组，可以接受两个参数，
+        // 即要返回起始位置和结束位置，在只有一个参数时，返回从指定位置到结束的所有项
+        // 如果有两个返回他们之间包含开始不包括结束，不会影响原来数组
+
+        var number = [1,5,2,65,12,8,45,234,8];
+        var number1 = number.slice(1);
+        var number2 = number.slice(1,4);
+        console.log(number1);
+        console.log(number2);
+
+
+
+        // splice();主要用途是插入，但是可以完成删除和替换
+        // 删除：可以删除任意数量的项，只需提供2个参数：起始，数量
+        var splicenumber1 = number.splice(0,2);
+        console.log(splicenumber1);
+        console.log(number);
+
+        //插入：插入任意数量，三个参数：起始，(要删除的项数)，插入的项，
+        // 如果插入的多，可以继续添加
+        var splicenumber2 = number.splice(2,0,4,5);
+        console.log(number);
+
+        //替换：插入同时删除，三个参数：起始，删除项数，插入（可不与删除相同）
+        var splicenumber3 = number.splice(2,1,123);
+        console.log(number);
+
+
+
+        //toFixed()方法会按照小数位返回数值的字符串形式
+        var num = 10;
+        console.log(num.toFixed(2));
+
+
+
+
+        //字符串相关
+        //字符串访问字符串中特定字符的方法: charAt(); charCodeAt();
+        var string = "hello world!";
+        console.log(string.charAt(1));
+        //字符编码
+        console.log(string.charCodeAt(1));
+        // 也可以按照数组的形式访问
+        console.log(string[1]);
+        
+        //concat();用于拼接字符串
+        var a = "qwe";
+        var b = a.concat("asd");
+        var c = a.concat("asd","zxc","fdsf","sdf");
+        console.log(b);
+        console.log(c);
+
+        //replace 修改
+        var restring = string.replace('e','k');
+        console.log(restring);
+
+
+        //slice();substr();substring();基于子字符串创建新字符串
+        //参数为1个则从开始到结束
+        //slice();substring();参数为(start,end+1)
+        //如果是slice(1,4),则只会显示1，2，3
+        var slicestring = string.slice(3,7);
+        var substring = string.substring(3,7);
+        console.log(slicestring);
+        console.log(substring);
+        //substr();第二个参数为长度
+        var subsstring = string.substr(3,7);
+        console.log(subsstring);
+        //如果为负数则为倒数,slice是长度加上负数，
+        //substr为负的第一个参数加上长度，第二个为0
+        // substring是全都为0
+        var slicestring1 = string.slice(-3);
+        var substring1 = string.substring(-3);
+        console.log(slicestring1);
+        console.log(substring1);
+        var subsstring1 = string.substr(-3);
+        console.log(subsstring1);
+        var slicestring2 = string.slice(3,-4);
+        var substring2 = string.substring(3,-4);
+        console.log(slicestring2);
+        console.log(substring2);
+        var subsstring2 = string.substr(3,-4);
+        console.log(subsstring2);
+
+
+        //trim();删除前后空格
+        var space = "   hello world   ";
+        console.log(space.trim());
+
+
+        // toLocaleLowerCase(英语自带大小写)
+        // toLowerCase()转换为小写
+        // toUpperCase()转换为大写
+        var string1 = "HeLLo WorlD";
+        // console.log(string1.toLocaleLowerCase());
+        // console.log(string1.toLocaleUpperCase());
+        console.log(substring1.toLowerCase());
+        console.log(string.toUpperCase());
+
+
+
+        // 位置方法
+        // indexOf();lastindexOf(),没找到为-1
+        // 都接受两个参数：查找的和(可选的)表示查找起点位置的索引，last为从后往前
+        //数组和字符串都一样，字符串可能出现last与indexOf不同情况，可循环调用
+        var number=[1,4,5,76,34,123,67,65,1235];
+        var indexnumber = number.indexOf(123);
+        console.log(indexnumber);
+        var indexnumber1 = number.indexOf(65);
+        console.log(indexnumber1);
+
+        //compare函数
+        var strcom = 'goal';
+        var aim = 'apple';
+        console.log(strcom.localeCompare(aim));//靠前为1
+
+
+        // 数组迭代：5种，每个方法都接受两个参数，要在每一项运行的函数和该函数作用域对象——
+        // 影响this的值，传入这些方法中的函数会接受三个参数：数组项的值，
+        //该项在数组中的位置和它本身
+        // every():对数组每一项都是true才为true
+        // some():对每一项迭代，只要有一个为true则返回true
+        // map():返回每次调用结果组成的数组
+        // filter():对数组中每一项返回true的项组成的数组
+        // forEach():无返回值，与for循环基本类似
+
+        var numbers = [1,2,3,4,5,4,3,2,1];
+        var everyresult = numbers.every(function(item,index,array){
+            return(item>2);
+        });
+        console.log(everyresult);
+
+        var someresult = numbers.some(function(item,index,array){
+            return(item>2);
+        });
+        console.log(someresult);
+
+        var filterresult = numbers.filter(function(item,index,array){
+            return(item>2);
+        });
+        console.log(filterresult);
+
+        var mapresult = numbers.map(function(item,index,array){
+            return(item*2);
+        });
+        console.log(mapresult);
+
+        //归并
+        // reduce(); 从第一项开始，逐个遍历到最后，函数有4个参数：前一个值，当前值，
+        // 项的索引和数组对象。这个函数返回的任何值都会作为第一个参数自动传给下一项。
+        // 第一次迭代发生在数组第二项上，所以第一个参数数数组第一项，第二个为第二项
+        var sum = numbers.reduce(function(prev,cur,index,array){
+            return prev + cur;
+        });
+        console.log(sum);
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#all{
+    height: 300px;
+    width: 500px;
+    margin: auto;
+    position: relative;
+    top: 100px;
+    overflow: hidden;
+}
+
+ul{
+    position: absolute;
+    z-index: 1;
+    height: 300px;
+    width: 3500px;
+}
+li{
+    list-style: none;
+    float: left;
+}
+.input{
+    display: none;
+}
+#radio1{
+    margin-left: 160px;
+}
+.h{
+    z-index: 2;
+    height: 50px;
+    width: 30px;
+    background-color:rgba(66, 60, 60, 0.3);
+    position: absolute;
+    top: 140px;
+    font-size: 25px;
+    line-height: 50px;
+    text-align: center;
+    color: rgb(61, 60, 60);
+    cursor: pointer;
+}
+.h2{
+    position: absolute;
+    top: 140px;
+    left:470px;
+}
+ label{
+    height: 10px;
+    width: 10px;
+    float: left;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-left: 23px;
+    position: relative;
+    top: 257px;
+    left: 137px;
+    cursor: pointer;
+    z-index: 99;
+    border: 1px solid grey;
+} 
+/*#buttons {
+    position: absolute;
+    left: 230px;
+    bottom: 20px;
+    z-index: 2;
+    height: 10px;
+    width: 100px;
+}
+
+#buttons span {
+    float: left;
+    margin-right: 5px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background: #333;
+    cursor: pointer;
+}

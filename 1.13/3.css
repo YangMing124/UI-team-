@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+duan{
+    font-size: 15px;
+    height: 30px;
+    width: 700px;
+}
+li{
+    list-style: none;
+}
+luo{
+    font-size: 15px;
+    height: 30px;
+    width: 700px;
+    position: relative;
+    top: 10px;
+}
+ul>div:nth-of-type(2n+1){
+    background-color: orange;
+}
+ul>li:nth-of-type(2n+2){
+    background-color: orange;
+}

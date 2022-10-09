@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>二叉树</title>
+</head>
+<body>
+
+</body>
+<script>
+    function Node(data,left,right){
+        this.left=null;
+        this.data=data;
+        this.right=null;
+        this.show=show;
+    }
+    function show(){
+        return this.data;
+    }
+    function BST(){
+        this.root=null;
+        this.Find=Find;
+        this.Max=Max;
+        this.Min=Min;
+        this.Insert=Insert;
+        this.Delete=Delete;
+        this.mini=mini;
+        this.DeleteNode=DeleteNode;
+        this.Front=Front;//前序遍历
+        this.Middle=Middle;//中序遍历
+        this.Back=Back;//后序遍历
+    }
+    //插入
+    function Insert(node){
+        var point=new Node(node,null,null);
+        if(this.root==null){
+            this.root=point;
+        }
+        else{
+            var current=this.root;
+            while(true){
+                if(node<current.data){
+                    if(current.left==null){
+                        current.left=point;
+                        break;
+                    }
+                    else{
+                        current=current.left;
+                    }
+                }
+                else{
+                    if(current.right==null){
+                        current.right=point;
+                        break;
+                    }
+                    else{
+                        current=current.right;
+                    }
+                }
+            }
+        }
+    }
+    //前序遍历
+    function Front(node){
+        if(node){
+            console.log(node.show());
+            Front(node.left);
+            Front(node.right);//根左右
+        }
+    }
+    //中序遍历
+    function Middle(node){
+        if(node){
+            Middle(node.left);
+            console.log(node.show());
+            Middle(node.right);//左右根
+        }
+    }
+    //后序遍历
+    function Back(node){
+        if(node){
+            Back(node.left);
+            Back(node.right);
+            console.log(node.show());
+        }
+    }
+    //查询
+    function Find(node){
+        var current=this.root;
+        while(true){
+            if(node==current.data){
+                console.log("找到了");
+                return current.data;
+            }
+            else if(node<current.data){
+                current=current.left;
+            }
+            else{
+                current=current.right;
+            }
+        }
+        return null;
+    }
+    //最大值
+    function Max(){
+        var current=this.root;
+        while(current.right!=null){
+            current=current.right;
+        }
+        return current.data;
+    }
+    //最小值
+    function Min(){
+        var current=this.root;
+        while(current.left!=null){
+            current=current.left;
+        }
+        return current.data;
+    }
+    //删除
+    function Delete(data){
+        root=DeleteNode(this.root,data);//传入节点和想要删除的值
+    }
+    //找到最小
+    function mini(node){
+        if(node.left==null){
+            return node;
+        }
+        else{
+            return mini(node.left);
+        }
+    }
+    //删除节点
+    function DeleteNode(node,data){
+     if(node==null){
+            return null;//如果树为空
+        }
+        if(data==node.data){
+            if(node.left==null&&node.right==null){
+                return null;
+            }
+            if(node.left==null){
+                return node.right;
+            }
+            if(node.right==null){
+                return node.left;
+            }
+            var mi=mini(node.right);
+            node.data=mi.data;                                                  
+            node.right=DeleteNode(node.right,mi.data);
+            return node;
+        }
+        else if(data<node.data){
+            node.left=DeleteNode(node.left,data);
+            return node;
+        }
+        else{
+             node.right=DeleteNode(node.right,data);
+            return node;
+        }
+    }
+   
+    var aa=new BST();
+    aa.Insert(80);
+    aa.Insert(60);
+    aa.Insert(65);
+    aa.Insert(54);
+    aa.Insert(90);
+    aa.Insert(62);
+    aa.Insert(100);
+    // aa.Insert(83);
+    // aa.Insert(120);
+    // aa.Insert(110);
+    // aa.Insert(86);
+    // aa.Insert(93);
+    // aa.Insert(52);
+    // aa.Insert(57);
+    console.log("后序遍历")
+    Back(aa.root);
+    console.log("前序遍历")
+    Front(aa.root);
+    console.log("中序遍历")
+    Middle(aa.root);
+    console.log("最大值")
+    var a=aa.Max();
+    console.log(a);
+    console.log("最小值");
+    var b=aa.Min();
+    console.log(b);
+    aa.Find(120);
+    // console.log(c);
+    aa.Delete(100);
+    console.log(Back(aa.root));
+</script>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/Js1.css">
+    <title>Document</title>
+</head>
+<body>
+    <script src="javascript/js.js"></script>
+    <div id="form">
+        <div id="top">
+            <p>用户注册</p>
+        </div>
+        <div id="body">
+            <div>
+                <span class="user">用户名:</span>
+                <input type="text" class="biao" id="name">*
+                <a href="#">检查是否有相同的用户名</a>
+            </div>
+            <div>
+                <span class="mi">密码:</span>
+                <input type="text" class="biao" id="password">*(至少6位)
+                <span class="four">真实姓名:</span>
+                <input type="text" class="biao" id="realname">*
+            </div>
+            <div>
+                <span class="four">确认密码:</span>
+                <input type="text"  class="biao" id="rpassword">*
+                <span class="sex">性别:</span>
+                <input type="radio" name="xb" value="男">男
+                <input type="radio" name="xb" value="女">女
+            </div>
+            <div>
+                <span class="four">证件类型:</span>
+                <select name="type" id="type">
+                    <option value="--">-------------请选择--------------</option>
+                    <option value="身份证">身份证</option>
+                    <option value="驾驶证">驾驶证</option>
+                    <option value="学生证">学生证</option>
+                </select>*
+                <span class="four2">出生日期:</span>
+                <input type="text" class="biao" id="date">*
+            </div>
+            <div>
+                <span class="four">证件号码:</span>
+                <input type="text" class="biao" id="number">*
+                <span class="four2">证件类型:</span>
+                <select name="type" id="country">
+                    <option value="--">-------------请选择--------------</option>
+                    <option value="china">中国</option>
+                    <option value="US">美国</option>
+                    <option value="UK">英国</option>
+                </select>
+            </div>
+            <div>
+                <span class="four">联系号码:</span>
+                <input type="text" class="biao" id="phone">*
+                <span class="sex">城市:</span>
+                <input type="text" class="biao" id="city">
+            </div>
+            <div>
+                <span class="four">手机号码:</span>
+                <input type="text" class="biao" id="telephone">*(建议填写,以便短信通知)
+            </div>
+            <div>
+                <span class="efour">E-mail:</span>
+                <input type="text" class="biao" id="mail">*
+                <span class="sex">邮编:</span>
+                <input type="text" class="biao" id="post">
+            </div>
+            <div>
+                <span class="four">联系地址:</span>
+                <input type="text" class="biao1" id="address">*
+            </div>
+            <input type="button" value="重置" class="submit" id="re">
+            <input type="submit" value="注册" class="submit" onclick="mysubmit();">
+        </div>
+    </div>
+</body>
+</html>

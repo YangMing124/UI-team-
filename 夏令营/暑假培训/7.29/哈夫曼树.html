@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var result="";
+    var result1="";
+    function Node(data){
+        this.weight=data;
+        this.left=null;
+        this.right=0;
+        this.father="root";
+    }
+    function Find(node){
+        var b=node;
+        var a=[];
+        for(var k=0;k<b.length;k++){
+            if(b[k].father=="root"&&b[k].weight!=0){
+                a.push(b[k]);
+            }
+        }
+        for(var i=0;i<a.length-1;i++){
+            for(var j=i;j<a.length;j++){
+                if(a[i].weight>a[j].weight){
+                        var temp=a[i];
+                        a[i]=a[j];
+                        a[j]=temp
+                }
+            }
+        }
+        result=a[0];
+        result1=a[1];
+    }
+    function cout(node,data){
+        for(var i=0;i<node.length;i++){
+            if(node[i].weight==data){
+                return(i);
+            }
+        }
+    }
+    // function find(a,l,s1){
+    //     min = 0;
+    //     for(var i = 1;i<l;i++){
+    //         if(a[i].element<a[min].length&&p&&min!=s1)
+    //     }
+    // }
+    // s1 find(a,i-1,null);
+    // s2 = find(a,i-1,s1);
+    function insert(node){
+        var tree=new Array(node.length*2-1);
+        for(var i=0;i<node.length;i++){
+            tree[i]=new Node(node[i]);
+        }
+        for(var h=i;h<tree.length;h++){
+            tree[h]=new Node(0);
+        }
+        Find(tree);
+        var s1=result;
+        var s2=result1;
+        for(var j=i;j<tree.length;j++){
+            tree[j].weight=s1.weight+s2.weight;
+            s1.father=j;
+            s2.father=j;
+            tree[j].left=cout(tree,s1.weight);
+            tree[j].right=cout(tree,s2.weight);
+            Find(tree);
+            s1=result;
+            s2=result1;
+        }
+        console.log(tree);
+    }
+    var aa=[3,6,8,12,23,16];
+    insert(aa);
+</script>
+</html>

@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#first{
+    position: relative;
+    left: -300px;
+}
+#second{
+    position: relative;
+    left: -450px;
+    top: 40px;
+    width: 100px;
+    height: 20px;
+}
+div{
+    height: 50px;
+    width: 7px;
+    background-color: green;
+    float: left;
+    position: relative;
+    top: 100px;
+}

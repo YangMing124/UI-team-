@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/1.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="all">
+        <input type="text" class="hah" id="number">
+        <button class="hah" onclick="za();">左加</button>
+        <button class="hah" onclick="ya();">右加</button>
+        <button class="hah" onclick="zj();">左减</button>
+        <button class="hah" onclick="yj();">右减</button>
+        <button class="hah" onclick="px();">排序</button>
+        <div id="display"></div>
+    </div>
+</body>
+<script>
+    var clas=[];
+    var sh=document.getElementById("display").innerHTML;
+    function za(){
+        var a=document.getElementById("number").value;
+        clas.unshift(a);
+        show();
+    }
+    function ya(){
+        var a=document.getElementById("number").value;
+        clas.push(a);
+        show();
+    }
+    function zj(){
+        clas.shift();
+        show();
+    }
+    function yj(){  
+        clas.pop();
+        show();
+    }
+    function show(){
+        sh=document.getElementById("display");
+        sh.innerHTML="";
+        for(var i=0;i<clas.length;i++)
+        {
+            sh.innerHTML+='<div id="d">'+clas[i]+'</div>';
+        }
+    }
+    function px(){
+        clas.sort(function(a1,b1){
+             if(a1<b1){
+                    return 1;
+                }
+                if(a1>b1){
+                    return -1;
+                }
+                else
+                    return 0;
+        });
+        show();
+    }
+</script>
+</html>

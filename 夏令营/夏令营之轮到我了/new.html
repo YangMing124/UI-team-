@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" value="" id="q">
+    <input type="text" value="2" id="w">
+    <input type="text" value="" id="e">
+    <button onclick="submit();">click</button>
+</body>
+<script>
+    function submit(){
+        var num1 = document.getElementById("q").value;
+        var num2 = document.getElementById("w").value;
+        // var num3 = document.getElementById("e").value;
+        console.log(num1);
+        console.log(document.getElementById("e").value=num1+Number(num2)); 
+    }
+
+
+
+
+
+       var numbers = [1,2,3,4,5,4,3,2,1];
+        var everyresult = numbers.every(function(item,index,array){
+            return(item>2);
+        });
+        console.log(everyresult);
+        var someresult = numbers.some(function(item,index,array){
+            return(item>2);
+        });
+        console.log(someresult);
+        var mapresult = numbers.map(function(item,index,array){
+            return(item*2);
+        });
+        console.log(mapresult);
+        var filterresult = numbers.filter(function(item,index,array){
+            return(item>2);
+        });
+        console.log(filterresult);
+        var sum = numbers.reduce(function(prev,cur,index,array){
+            return prev + cur;
+        });
+        console.log(sum);
+</script>
+</html>

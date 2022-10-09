@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reg.css">
+    <title>注册</title>
+</head>
+<style>
+    a{
+        text-decoration: none;
+    }
+</style>
+<body>
+    <div id="whole">
+        <div id="headline">
+                <a href="mainpage.html"><div id="title"><img src="image/title.jpg" alt=""></div></a>
+                <div id="login"><a href="login.html" class="logi">登陆</a></div>
+                <div id="registered"><a href="registered.html" class="reg">注册</a></div>
+        </div>
+        <div class="middle">
+            <img src="logo.png" alt="" class="flower">
+            <div class="leftpart">
+                <div class="log">注册</div>
+                <div></div>
+                <input type="text" placeholder="电子邮箱" class="email">
+                <input type="text" placeholder="昵称" class="nick" id="nami">
+                <input type="password" placeholder="密码" class="password">
+                <div class="check1"><input type="radio" name="x"><span class="check">男</span></div>
+                <div class="check2"><input type="radio" name="x"><span class="check">女</span></div>
+                <div class="sure" onclick="pp();" id="nowing"><p class="imme" >立即注册</p></div>
+                <div class="last"><input type="checkbox"><span>同意注册条款</span></div>
+            </div>
+            <div class="rightpart">
+                <div class="yet"><p>用账号 <a href="login.html" target="_blank" class="alright">登陆</a></p></div>
+                <div class="more"><p>您还可以通过以下方式直接登陆：</p></div>
+                <div class="sprint"><img src="image/sprint.png" alt="" class="tips"></div>
+            </div>
+        </div>
+        <div id="foot"><img src="image/footie.jpg" alt="" class="footie"></div>
+    </div>
+    <script>
+        function pp(){
+            var a =document.getElementById("nami").value;
+            // var b=document.getElementById("nowing").value;
+            // if (b.checked){
+            alert(a+", 欢迎你加入 Speak Yourself , 实现梦想 😀");
+            alert("现在，点击登录");
+            
+        }
+        
+    </script>
+</body>
+</html>

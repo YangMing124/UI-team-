@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>单向</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function node(data)
+    {
+        this.data=data;
+        this.next=null;
+    }
+    function list(){
+        this.head=new node("head");
+        this.find=find;
+        this.insert=insert;
+        this.remove=remove;
+        this.show=show;
+    }
+    function find(data){
+        var nodenow=this.head;
+        while(nodenow!=null&&data!=nodenow.data)
+        {
+            nodenow=nodenow.next;
+        }
+        // console.log(nodenow);
+        return nodenow;
+    }
+    function insert(data,add){
+        var line=new node(data);
+        var cur=this.find(add);
+        line.next=cur.next;
+        cur.next=line;
+    }
+    function remove(data){
+        if(data="head"){
+            this.head=this.head.next;
+            return;
+        }
+        var temp=this.find(data);
+        var node1=this.head;
+        while(node1!=null&&node1.next.data!=data)
+        {
+            node1=node1.next;
+        }
+        node1.next=temp.next;
+    }
+    function show(){
+        var code=this.head;
+        while(code)
+        {
+            console.log(code.data);
+            code=code.next;
+        }
+    }
+    var l=new list();
+    l.insert("a","head");
+    l.insert("b","a");
+    l.insert("d","b");
+    l.insert("e","d");
+    l.show();
+    l.remove("b");
+    l.remove("head");
+    l.show();
+
+</script>
+</html>

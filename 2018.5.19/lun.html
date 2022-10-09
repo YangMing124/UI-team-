@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="lun.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="all">
+            <div class="pic">
+                <input type="radio" name="judge" id="radio1" class="input">
+                <input type="radio" name="judge" id="radio2" class="input">
+                <input type="radio" name="judge" id="radio3" class="input">
+                <input type="radio" name="judge" id="radio4" class="input">
+                <input type="radio" name="judge" id="radio5" class="input">
+                <div id="first">
+                    <ul id="turn" style="left:-500px;">
+                        <li class="tt"><img src="igm/05.jpg" alt="" height="300px" width="500px"></li>
+                        <li class="tt"><img src="igm/01.jpg" alt="" height="300px" width="500px"></li>
+                        <li class="tt"><img src="igm/02.jpg" alt="" height="300px" width="500px"></li>
+                        <li class="tt"><img src="igm/03.jpg" alt="" height="300px" width="500px"></li>
+                        <li class="tt"><img src="igm/04.jpg" alt="" height="300px" width="500px"></li>
+                        <li class="tt"><img src="igm/05.jpg" alt="" height="300px" width="500px"></li>
+                        <li class="tt"><img src="igm/01.jpg" alt="" height="300px" width="500px"></li>
+                    </ul>
+                </div>
+                <div id="second">
+                    <label for="radio1" id="radio11" class="bu b1" onclick="r1();"></label>
+                    <label for="radio2" id="radio12" class="bu b2" onclick="r2();"></label>
+                    <label for="radio3" id="radio13" class="bu b3" onclick="r3();"></label>
+                    <label for="radio4" id="radio14" class="bu b4" onclick="r4();"></label>
+                    <label for="radio5" id="radio15" class="bu b5" onclick="r5();"></label>
+                </div>
+            </div>       
+            <div id="left" class="h" onclick="leftgo();" ><</div>
+            <div id="right" class="h h2" onclick="rightgo();">></div>
+    </div>
+    <script src="lun.js"></script>
+</body>
+</html>

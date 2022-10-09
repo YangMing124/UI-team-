@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+input{
+    outline: none;
+}
+a{
+    text-decoration: none;
+}
+#form{
+    height: 560px;
+    width: 740px;
+    background-color: #f0f0f0;
+    margin: auto;
+}
+#top{
+    height: 12%;
+    background-color: #425d70;
+}
+#top>p{
+    line-height: 67.2px;
+    font-size: 30px;
+    font-family: 黑体;
+    margin-left: 50px;
+}
+#body>div{
+    height: 30px;
+    margin-top: 15px;
+    font-size: 13px;
+}
+.user{
+    margin-left: 54px;
+}
+.mi{
+    margin-left: 66px;
+}
+.four{
+    margin-left: 40px;
+}
+.efour{
+    margin-left: 53px;
+}
+.biao{
+    width: 180px;
+}
+.biao1{
+    width: 530px;
+}
+.sex{
+    margin-left: 122px;
+}
+.four2{
+    margin-left: 96px;
+}
+.submit{
+    width: 50px;
+    height: 25px;
+    border-radius: 7px;
+    outline: none;
+    margin-left: 30px;
+}
+#re{
+    margin-left: 280px;
+}

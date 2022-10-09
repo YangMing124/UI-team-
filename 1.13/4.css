@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.turn{
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    margin: auto;
+    border-radius: 50px;
+    margin-top: 200px;
+    -webkit-transition: transform 10s ease,
+    width 10s ease,margin 10s ease,background 10s ease;/*设置旋转样式*/
+}
+.one:hover{
+    -webkit-transform: rotate(3000deg);/*旋转*/
+    width:200px;
+    margin-top:1000px;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var doo=function zf(s){
+        var a=[];
+        a.push("#");
+        for(var i=0;i<s.length;i++)
+        {
+            if(s[i]=='('||s[i]=='['||s[i]=='{')
+                a.push(s[i]);
+            if(s[i]==')'){
+                var b=a.pop();
+                if(b!='(')
+                    return false;
+            }
+            if(s[i]==']'){
+                var b=a.pop();
+                if(b!='['){
+                    return false;
+                }
+            }
+            if(s[i]=='}'){
+                var b=a.pop();
+                if(b!='{')
+                    return false;
+            }
+        }
+        if(a.pop()!="#")
+            return false;
+        else
+            return true;
+    }
+    var result1= doo("({{[]}})");
+    console.log(result1);
+    var result2= doo("(((({[]})");
+    console.log(result2);
+</script>
+</html>

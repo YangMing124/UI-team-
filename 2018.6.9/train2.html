@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="2.css"> -->
+    <title>Document</title>
+    <script >
+        function node(date){
+            this.date=date;
+            this.next=null;
+        }
+        function link(){
+            this.head=new node("head");
+            this.find=find;
+            this.show=show;
+            this.delete=del;
+            this.insert=inse;
+        }
+        function inse(date){
+            var nnode=new node(date);
+            nnode.next=this.head.next;
+            this.head.next=nnode;
+        }
+        function show(){
+            var code=this.head.next;
+            while(code)
+            {
+                console.log(code.date);
+                code=code.next;
+            }
+        }
+        function find(data){
+            var c=0;
+            var code=this.head.next;
+            while(code)
+            {
+                if(data==code.date)
+                {
+                    c++;
+                    console.log(code.date);
+                }
+                code=code.next;
+            }
+            if(c==0)
+                alert("没有该节点!");
+        }
+        function del(data){
+            var code=this.head.next;
+            var record=this.head;
+            while(code)
+            {
+                if(data==code.date)
+                {
+                    record.next=code.next;
+                    break;
+                }
+                record=record.next;
+                code=code.next;
+            }
+        }
+        var l=new link();
+        l.insert(1);
+        l.insert(2);
+        l.insert(3);
+        l.insert(4);
+        l.insert(5);
+        l.show();
+        l.find(3);
+        l.delete(5);
+        l.show();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

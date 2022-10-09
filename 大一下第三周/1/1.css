@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#all{
+    margin: auto;
+    height: 716px;
+    width: 1200px;
+    background-color: #caf9df;
+}
+#header{
+    height: 50px;
+    width: 100%;
+    background-color: blue;
+}
+#headcenter{
+    margin: auto;
+    width: 900px;
+    height: 100%;
+    background-color: #ffcc24;
+}
+#body{
+    height: 666px;
+    width: 840px;
+    position: absolute;
+    left: 182px;
+}
+#bodytop{
+    height: 243px;
+    background-color: green;
+}
+#bodyfoot{
+    height: 423px;
+}
+#bodyfoot>:first-child{
+    display: inline-block;
+    height: 100%;
+    width: 556px;
+    background-color: red;
+}
+#bodyfoot>:last-child{
+    height: 396px;
+    width: 250px;
+    background-color: rgb(181,141,80);
+    float: right;
+    margin-top: 27px;
+}

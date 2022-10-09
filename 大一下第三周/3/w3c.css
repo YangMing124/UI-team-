@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+}c
+#all{
+    width: 130px;
+    height: 400px;
+    background-color: azure;
+}
+.first{
+    margin-left: 5px;
+    font-size: 15px;
+}
+a{
+    text-decoration: none;
+}
+.a1{
+    padding: 10px;
+    font-size: 12px;
+    font-family: 黑体;
+}
+.a1:link{
+    color: black;
+}
+.a1:visited{
+    background-color: blueviolet;
+}
+li:hover{
+    background-color: rgb(241, 236, 236);
+    color: red;
+}
+.a1:active{
+    background-color: yellowgreen;
+}

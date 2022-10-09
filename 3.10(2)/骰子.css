@@ -1,0 +1,173 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#shape{
+    height: 150px;
+    width: 150px;
+    border-left: 3px solid rgb(223,223,223);
+    border-right: 3px solid rgb(223,223,223);
+    border-bottom:  3px solid  rgb(117,117,117);
+    border-radius: 15px;
+}
+.one{
+    margin-left: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+.first{
+    height: 35px;
+    width: 35px;
+    background-color: black;
+    border-radius: 35px;
+}
+.two{
+    margin-left: 150px;
+    display: flex;
+    justify-content: space-between;
+    float: left;
+}
+.second{
+    height: 35px;
+    width: 35px;
+    background-color: black;
+    border-radius: 35px;
+    margin-left: 8px;
+    margin-top: 8px;
+}
+.second2{
+    height: 35px;
+    width: 35px;
+    background-color: black;
+    border-radius: 35px;
+    display: flex;
+    align-self: flex-end;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+.three{
+    margin-left: 750px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.third{
+    height: 35px;
+    width: 35px;
+    background-color: black;
+    border-radius: 35px;
+    margin-left: 8px;
+    margin-top: 8px;
+}
+.third2{
+    height: 35px;
+    width: 35px;
+    background-color: black;
+    border-radius: 35px;
+    display: flex;
+    align-self: center;
+}
+.third3{
+    height: 35px;
+    width: 35px;
+    background-color: black;
+    border-radius: 35px;
+    display: flex;
+    align-self: flex-end;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+.four{
+    margin-left: 150px;
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    float: left;
+}
+.four11{
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
+}
+.four1{
+    margin: 8px;
+    height: 35px;
+    width: 35px;
+    background-color: black;
+    border-radius: 35px;
+}
+.four2{
+    margin: 8px;
+    height: 35px;
+    width: 35px;
+    background-color: black;
+    border-radius: 35px;
+}
+.four3{
+    margin: 8px;
+    height: 35px;
+    width: 35px;
+    background-color: black;
+    border-radius: 35px;
+}
+.four4{
+    margin: 8px;
+    height: 35px;
+    width: 35px;
+    background-color: black;
+    border-radius: 35px;
+}
+.five{
+    margin-left: 150px;
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    float: left;
+}
+.around{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.center{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.five2{
+    height: 35px;
+    width: 35px;
+    background-color: black;
+    border-radius: 35px;
+}
+.five1{
+    margin: 8px;
+    height: 35px;
+    width: 35px;
+    background-color: black;
+    border-radius: 35px;
+}
+.six{
+    margin-left: 750px;
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.fina{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.six1{
+    margin: 8px;
+    height: 35px;
+    width: 35px;
+    background-color: black;
+    border-radius: 35px;
+}

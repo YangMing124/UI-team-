@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="text">
+    <button type="submit" style="height:20px; width:50px;" onclick="sub();"></button>
+</body>
+<script>
+    // 循环
+    function sub(){
+        var str="";
+        var text=document.getElementById("text");
+        for(var i=0;i<text.value.length;i++){
+            str+=text.value[i];
+        }
+        var c=0;
+        function dictionary(){
+            this.add=add;
+            this.datastore=[];
+            this.show=show;
+            this.count=count;
+        }
+        var p=new dictionary();
+        for(var i=0;i<str.length;i++){
+            var num=p.count(str[i]);
+            p.add(str[i],num);
+            c=0;
+        }
+        function count(key){
+            for(var i=0;i<str.length;i++){
+                if(key==str[i])
+                    c++;
+            }
+            return c; 
+        } 
+        function add(key,item){
+            this.datastore[key]=item;
+        }
+        function show(){
+            for(var key in this.datastore) {//for in循环
+                console.log(key +' : '+ this.datastore[key]+';');
+            }
+        }
+        p.show();
+    }
+
+
+
+    //Object方法
+    function sub(){
+        var str="";
+        var text=document.getElementById("text");
+        for(var i=0;i<text.value.length;i++){
+            str+=text.value[i];
+        }
+        var c=1;
+        function dictionary(){
+            this.add=add;
+            this.datastore=[];
+            this.show=show;
+        }
+        var p=new dictionary();
+
+
+        for(var i=0;i<str.length;i++){
+            p.add(str[i],c);
+            for(var j=0;j<str.length;j++){
+                    if(str[Object.keys(str)[j]]==str[Object.keys(str)[i]]){
+                    p.add(str[i],c++);
+                }
+            }
+            c=1;
+        }
+        function add(key,item){
+            this.datastore[key]=item;
+        }
+        function show(){
+            for(var key in this.datastore) {//for in循环
+                console.log(key +' : '+ this.datastore[key]+';');
+            }
+        }
+        p.show();
+    }
+</script>
+</html>

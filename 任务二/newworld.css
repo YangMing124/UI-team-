@@ -1,0 +1,1102 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#all{
+    margin: 0 auto;
+    width: 1280px;
+    height: 4458px;
+}
+#header{
+    width: 100%;
+    height: 56px;
+    
+}
+.book{
+    height: 30px;
+    width: 30px;
+    background-image: url(img/书架.png);
+    position: relative;
+    left: 59px;
+    top: 13px;
+}
+.title{
+    font-family: 微软雅黑;
+    font-size: 22px;
+    position: relative;
+    left: 101px;
+    top: -16px;
+}
+.page{
+    color: #5b5e5e;
+    font-family: 微软雅黑;
+    font-size: 15px;
+    height: 100%;
+    width: 433px;
+    position: relative;
+    left: 701px;
+    top: -59px;
+}
+.c:hover{
+    color: rgb(235, 63, 83);
+    cursor: pointer;
+    border-bottom: 4px solid rgb(235, 63, 83);
+    transition: border-bottom 1s;
+}
+.cha{
+    height: 35px;
+    width: 60px;
+    position: relative;
+    top: 17px;
+    border-bottom: 4px solid white;
+}
+.ch{
+    position: relative;
+    left: 16px;
+}
+.cha1{
+    height: 35px;
+    width: 90px;
+    position: relative;
+    left: 65px;
+    top: -22px;
+    border-bottom: 4px solid white;
+}
+.ch1{
+    position: relative;
+    left: 15px;
+}
+.cha2{
+    height: 35px;
+    width: 90px;
+    position: relative;
+    top: -61px;
+    left: 160px;
+    border-bottom: 4px solid white;
+}
+.ch2{
+    position: relative;
+    left: 15px;
+}
+.cha3{
+    width: 90px;
+    height: 35px;
+    position: relative;
+    left: 255px;
+    top: -100px;
+    border-bottom: 4px solid white;
+}
+.ch3{
+    position: relative;
+    left: 15px;
+}
+.cha4{
+    width: 90px;
+    height: 35px;
+    position: relative;
+    left: 350px;
+    top: -139px;
+    border-bottom: 4px solid white;
+}
+.ch4{
+    position: relative;
+    left: 15px;
+}
+.man{
+    height: 20px;
+    width: 15px;
+    background-image: url(img/小人.png);
+    background-size: 15px 19px;
+    background-repeat: no-repeat;
+    position: relative;
+    top: -97px;
+    left: 1164px;
+}
+.login{
+    font-family: 微软雅黑;
+    font-size: 15px;
+    color: rgb(243, 128, 128);
+    position: relative;
+    left: 1185px;
+    top: -119px;
+}
+#begin{
+    width: 100%;
+    height: 691px;
+    background-image: url(img/图一.png);
+    background-repeat: no-repeat; 
+}
+.Time{
+    color: white;
+    font-family: 微软雅黑;
+    font-size: 60px;
+    position: relative;
+    top: 225px;
+    left: 130px;
+}
+.row1{
+    color: white;
+    font-family: 微软雅黑;
+    font-size: 20px;
+    position: relative;
+    top: 280px;
+    left: -323px;
+}
+.row2{
+    color: white;
+    font-family: 微软雅黑;
+    font-size: 20px;
+    position: relative;
+    top: 275px;
+    left: 140px;   
+}
+.begin{
+    height: 65px;
+    width: 330px;
+    background-color: rgb(232, 80, 79);
+    position: relative;
+    left: 140px;
+    top: 320px;
+}
+.feel{
+    font-family: 微软雅黑;
+    color: white;
+    position: relative;
+    left: 110px;
+    top: 12px;
+    font-size: 25px;
+}
+.begin:hover{
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+.begin:hover
+.feel{
+    color: rgb(232, 80, 79);
+    transition: color 1s;
+}
+#head{
+    width: 100%;
+    height: 250px;
+}
+.circle{
+    width: 41px;
+    height: 42px;
+    background-image: url(img/圆.png);
+    background-repeat: no-repeat;
+    position: relative;
+    left: 145px;
+    top: 45px;
+}
+.flag{
+    height: 40px;
+    width: 35px;
+    background-image: url(img/小旗.png);
+    background-repeat: no-repeat;
+    position: relative;
+    top: -76px;
+    left: 477px;
+}
+.flower{
+    height: 40px;
+    width: 35px;
+    background-image: url(img/小花.png);
+    background-repeat: no-repeat;
+    position: relative;
+    top: -200px;
+    left: 789px;
+}
+.square{
+    height: 40px;
+    width: 40px;
+    background-image: url(img/正方形.png);
+    background-repeat: no-repeat;
+    position: relative;
+    top: -320px;
+    left: 1104px;
+}
+.l{
+    height: 40px;
+    width: 2px;
+    background-color: rgb(173,174,174);
+}
+.line{
+    position: relative;
+    left: 323px;
+    top: 45px;
+}
+.line1{
+    position: relative;
+    left: 646px;
+    top: -76px;
+}
+.line2{
+    position: relative;
+    top: -198px;
+    left: 969px;
+}
+.a{
+    font-family: 微软雅黑;
+    font-size: 14px;
+    color: rgb(88, 90, 90);
+}
+.da{
+    position: relative;
+    left: 95px;
+    top: 80px;
+}
+.geng{
+    position: relative;
+    left: 135px;
+    top: 86px;
+}
+.feng{
+    position: relative;
+    left: 420px;
+    top: -41px;
+}
+.hui{
+    position: relative;
+    left: 426px;
+    top: -36px;
+
+}
+.shi{
+    position: relative;
+    left: 740px;
+    top: -163px;
+}
+.wei{
+    position: relative;
+    left: 780px;
+    top: -158px;
+}
+.wan{
+    position: relative;
+    left: 1050px;
+    top: -284px;
+}
+.quan{
+    position: relative;
+    left: 1080px;
+    top: -279px;
+}
+#book{
+    width: 100%;
+    height: 360px;
+    background-color: rgb(237,236,236);
+}
+.book1{
+    width: 90px;
+    height: 91px;
+    background-image: url(img/大书架.png);
+    position: relative;
+    left: 595px;
+    top: 89px;
+}
+.about{
+    font-size: 50px;
+    color: rgb(161,161,161);
+    position: relative;
+    left: 252px;
+    top: 128px;
+}
+#search{
+    width: 100%;
+    height: 340px;
+    background-image: url(img/看地图.png);
+    background-repeat: no-repeat;
+    background-size: 1280px 340px;
+}
+.cover{
+    width: 100%;
+    height: 340px;
+    background-image: url(img/图二遮罩.png);
+    z-index: 999;
+}
+.find{
+    color: white;
+    font-size: 20px;
+    font-family: 微软雅黑;
+    position: relative;
+    top: -287px;
+    left: 501px;
+}
+.lin{
+    width: 30px;
+    height: 1px;
+    margin: auto;
+    background-color: white;
+    position: relative;
+    top: -275px;
+    left: -30px;
+}
+.find:hover
+~.lin{
+    width: 170px;
+    transition: width 1s;
+}
+.find:hover{
+    cursor: pointer;
+}
+.eve{
+    color: white;
+    font-size: 15px;
+    font-family: 微软雅黑;
+    position: relative;
+    left: 415px;
+    top: -255px;
+}
+#coun{
+    color: rgb(159, 160, 160);
+    width: 235px;
+    height: 35px;
+    border: rgb(190,78,72) solid 1px;
+    position: relative;
+    top: -163px;
+    left: -273px;
+}
+#pro{
+    color: rgb(159, 160, 160);
+    width: 235px;
+    height: 35px;
+    border: rgb(190,78,72) solid 1px;
+    position: relative;
+    left: -249px;
+    top: -163px;
+}
+#city{
+    color: rgb(159, 160, 160);
+    width: 235px;
+    height: 35px;
+    border: rgb(190,78,72) solid 1px;
+    position: relative;
+    top: -163px;
+    left: -226px;
+}
+#sou{
+    width: 235px;
+    height: 35px;
+    background-color: rgb(190,78,72);
+    position: relative;
+    left: 915px;
+    top: -198px;
+}
+.sou{
+    color: white;
+    font-size: 20px;
+    position: relative;
+    left: 80px;
+    top: 2px;
+}
+#sou:hover{
+    background-color:white;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+#sou:hover
+.sou{
+    color: rgb(232, 80, 79);
+    transition: color 1s; 
+}
+#display{
+    width: 100%;
+    height: 605px;
+    background-color: rgb(247,247,247);
+}
+.art{
+    position: relative;
+    left: 156px;
+    top: 112px;
+}
+.photo1{
+    height: 310px;
+    width: 203px;
+    background-image: url(img/名画1.png);
+    background-repeat: no-repeat;
+    background-size:  100% 100%;
+    position: relative;
+    top: -254px;
+    left: 156px;
+    border-right: 9px solid white;
+    border-top: 12px solid white;
+    border-bottom: 12px solid white;
+    border-left: 9px solid white;
+}
+.photo1:hover{
+    cursor: pointer;
+    background-size: 110% 110%;
+}
+.photo2{
+    background-image: url(img/名画2.png);
+    background-repeat: no-repeat;
+    height: 310px;
+    width: 203px;
+    background-size: 100% 100%;
+    position: relative;
+    left: 410px;
+    top: -590px;
+    border-right: 9px solid white;
+    border-top: 12px solid white;
+    border-bottom: 12px solid white;
+    border-left: 9px solid white;
+}
+.photo2:hover{
+    cursor: pointer;
+    background-size: 110% 110%;
+}
+.photo3{
+    height: 310px;
+    width: 203px;
+    background-image: url(img/名画3.png);
+    background-repeat: no-repeat;
+    background-size:  100% 100%;
+    position: relative;
+    top: -995px;
+    left: 670px;
+    border-right: 9px solid white;
+    border-top: 12px solid white;
+    border-bottom: 12px solid white;
+    border-left: 9px solid white;
+}
+.photo3:hover{
+    cursor: pointer;
+    background-size: 110% 110%;
+}
+.photo4{
+    background-image: url(img/名画4.png);
+    background-repeat: no-repeat;
+    height: 310px;
+    width: 203px;
+    background-size: 100% 100%;
+    position: relative;
+    left: 912px;
+    top: -1355px;
+    border-right: 9px solid white;
+    border-top: 12px solid white;
+    border-bottom: 12px solid white;
+    border-left: 9px solid white;
+}
+.photo4:hover{
+    cursor: pointer;
+    background-size: 110% 110%;
+}
+.bei{
+    font-size: 20px;
+    font-family: 微软雅黑;
+    position: relative;
+    left: 236px;
+    top: -250px;
+}
+.big{
+    color: rgb(88, 90, 90);
+    font-size: 15px;
+    font-family: 微软雅黑;
+    position: relative;
+    left: 232px;
+    top: -241px;
+}
+.shang{
+    font-size: 20px;
+    font-family: 微软雅黑;
+    position: relative;
+    left: 430px;
+    top: -973px;
+}
+.night{
+    color: rgb(88, 90, 90);
+    font-size: 15px;
+    font-family: 微软雅黑;
+    position: relative;
+    top: -950px;
+    left: 290px;
+}
+.shen{
+    font-size: 20px;
+    font-family: 微软雅黑;
+    position: relative;
+    top: -997px;
+    left: 740px;
+}
+.sea{
+    color: rgb(88, 90, 90);
+    font-size: 15px;
+    font-family: 微软雅黑;
+    position: relative;
+    left: 640px;
+    top: -970px;
+}
+.hong{
+    font-size: 20px;
+    font-family: 微软雅黑;
+    position: relative;
+    top: -1360px;
+    left: 980px;
+}
+.pay{
+    color: rgb(88, 90, 90);
+    font-size: 15px;
+    font-family: 微软雅黑;
+    position: relative;
+    top: -1330px;
+    left: 884px;
+}
+#newworld{
+    width: 100%;
+    height: 566px;
+}
+.men{
+    height: 100%;
+    width: 850px;
+    background-image: url(img/8.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.tr{
+    height: 0;
+    width: 0;
+    border-top: 24px solid rgba(0,0,0,0);
+    border-right: 30px solid rgb(255, 255, 255);
+    border-left: 30px solid rgba(0,0,0,0);
+    border-bottom: 24px  solid rgba(0,0,0,0);
+    position: relative;
+    left: 790px;
+    top: -298px;
+    z-index: 999;
+}
+.world1{
+    font-size: 50px;
+    font-family: 方正书雅宋简;
+    color: #fff;
+    position: relative;
+    top: -520px;
+    left: 355px;
+}
+.world2{
+    font-size: 100px;
+    font-family: 方正书雅宋简;
+    color: #fff;
+    position: relative;
+    top: -430px;
+    left: 147px;
+}
+.world3{
+    font-size: 25px;
+    font-family: 方正书雅宋简;
+    color: #fff;
+    position: relative;
+    top: -355px;
+    left: -50px;
+}
+.world4{
+    font-size: 25px;
+    font-family: 方正书雅宋简;
+    color: #fff;
+    position: relative;
+    top: -312px;
+    left: -204px;
+}
+#leftnew{
+    width: 430px;
+    height: 566px;
+    position: relative;
+    left: 850px;
+    top: -746px;
+}
+.word{
+    font-size: 30px;
+    font-family: 方正书雅宋简;
+    color: #000000;
+}
+.red{
+    color: red;
+}
+.new{
+    font-size: 18px;
+    font-family: 黑体;color:rgb(145,145,145);
+    position: relative;
+    top: -50px;
+    left: -10px;
+}
+#new{
+    width: 300px;
+    position: relative;
+    top: -190px;
+    left: 70px;
+}
+.around{
+    height:34px;
+    width: 110px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    top: -265px;
+    left: 155px;
+    border: 1px solid red;
+    margin:0 auto;
+    margin-left: 20px;
+    transition: all 1s;
+}
+.ok:hover{
+    font-family: 方正书雅宋简;color: rgb(252, 252, 252);
+    background-color:rgb(233, 21, 21);
+}
+.click{
+    font-size: 15px;
+    font-family: 方正书雅宋简;color: rgb(255, 0, 0);
+    position: relative;
+    left: -20px;
+    top: 2px;
+    transition: width 5s,color rgb(255, 0, 0);
+    z-index: 888;
+}
+.ko{
+    position: relative;
+    top: -140px;
+}
+#picword{
+    width: 100px;
+    height: 100px;
+}
+#first{
+    width:430px;
+    height: 566px;
+    margin: auto;
+    overflow: hidden;
+}
+.input1{
+    display: none;
+}
+ul{
+    width: 1290px;
+    height: 566px;
+}
+li{
+    width:430px;
+    height: 566px;
+    list-style: none;
+    float: left;
+    text-align: center;
+    line-height: 311px;
+}
+#second{
+    margin: auto;
+    border-radius: 10px;
+    position: relative;
+    left: 248px;
+    top: 30px;
+}
+label{
+    height: 10px;
+    width: 10px;
+    float: left;
+    background-color: white;
+    border: 1px solid rgb(88, 90, 90);
+    border-radius: 10px;
+    margin: 10px;
+    position: relative;
+    left: -82px;
+    top: -160px;
+    cursor: pointer;
+}
+#second label:hover{
+    background-color: rgb(111,113,120);
+}
+#radio1:checked~#first #turn{
+    margin-left: 0px;
+}
+#radio2:checked~#first #turn{
+    margin-left: -430px;
+}
+#radio3:checked~#first #turn{
+    margin-left: -860px;
+}
+#newtime{
+    width: 100%;
+    height: 520px;
+}
+.left{
+    height: 100%;
+    width: 425px;
+    background-color: rgb(232,83,79);
+}
+.med{
+    height: 100%;
+    width: 425px;
+}
+.right{
+    height: 100%;
+    width: 430px;
+    background-image: url(img/女右.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    left: 850px;
+    top: -1079px;
+}
+.footr1{
+    height: 520px;
+    width: 430px;
+    background-color: rgba(0,0,0,0.3);
+    position: relative;
+    top: -1646px;
+    left: 850px;
+}
+.trr{
+        height: 0;
+        width: 0;
+        border-top: 24px solid rgba(0,0,0,0);
+        border-right: 30px solid rgba(0,0,0,0);
+        border-left: 30px solid rgba(252, 252, 252, 255);
+        border-bottom: 24px  solid rgba(0,0,0,0);
+        position: relative;
+        top: -1320px;
+        left: 850px;
+        z-index: 1000;
+}
+.time{
+    font-size: 25px;
+    font-family: 方正书雅宋简;
+    color: #fff;
+    position: relative;
+    top: 133px;
+    left: 162px;
+}
+.us{
+    font-size: 25px;
+    font-family: 方正书雅宋简;
+    color: #fff;
+    position: relative;
+    top: 170px;
+    left: 30px;
+}
+.heng{
+    width: 60px;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    position: relative;
+    top: 190px;
+    left: -15px;
+    transition: width 1s;
+}
+.b:hover 
+~.heng{
+    width: 160px;
+}
+.b:hover{
+    cursor: pointer;
+}
+.alknow{
+    height:37px;
+    width: 120px;
+    background-color: rgb(232,83,79);
+    position: relative;
+    top:45px;
+    left: 85px;
+    border: 1px solid #fff;
+    margin:0 auto;
+    margin-left: 20px;
+    transition: all 1s;
+}
+.ook:hover{
+    font-family: 方正书雅宋简;color: rgb(252, 252, 252);
+    background-color:rgb(235, 45, 45);
+}
+.look{
+    font-size: 15px;
+    font-family: 方正书雅宋简;color: rgb(255, 255, 255);
+    position: relative;
+    left: 35px;
+    top: -260px;
+    transition: width 5s,color rgb(255, 0, 0);
+    z-index: 888;
+}
+.look1{
+    font-size: 15px;
+    font-family: 方正书雅宋简;color: rgb(255, 255, 255);
+    position: relative;
+    left: 35px;
+    top: -260px;
+    transition: width 5s,color rgb(255, 0, 0);
+    z-index: 888;
+}
+.know{
+    position: relative;
+    left: 28px;
+    top: 7px;
+}
+.bring{
+    font-size: 25px;
+    font-family: 方正书雅宋简;
+    position: relative;
+    top: -425px;
+    left: 587px; 
+}
+.love{
+    font-size: 25px;
+    font-family: 方正书雅宋简;
+    position: relative;
+    top: -389px;
+    left: 450px;
+}
+.heng1{
+    width: 80px;
+    height: 2px;
+    background-color: rgb(145,145,145);
+    margin: 0 auto;
+    position: relative;
+    top: -369px;
+    left: 415px;
+    transition: width 1s;
+}
+#change1:hover 
+.heng1{
+    width: 160px;
+}
+#change1:hover{
+    cursor: pointer;
+}
+.ook1{
+    position: relative;
+    left: 95px;
+    background-color: #fff;
+    border: 1px solid rgb(232, 83, 79);
+}
+.alknow1{
+    height:37px;
+    width: 120px;
+    color: rgb(232, 83,79);
+    position: relative;
+    left: 530px;
+    top: -28px;
+    transition: all 1s;
+}
+.know1{
+    position: relative;
+    top: 7px;
+    left: 28px;
+}
+.ook1:hover{ 
+    font-family: 方正书雅宋简;color: rgb(252, 252, 252);
+    background-color:rgb(232, 83, 79);
+}
+#foot{
+    width: 100%;
+    height: 749px;
+}
+.bec{
+    font-size: 30px;
+    font-family: 微软雅黑;
+    color: rgb(63, 62, 62);
+    position: relative;
+    left: 520px;
+    top: 118px;
+}
+.heng2{
+    width: 60px;
+    height: 2px;
+    background-color: rgb(232, 83, 79);
+    margin: 0 auto;
+    position: relative;
+    top: 135px;
+    transition: width 1s;
+}
+.need{
+    font-family: 微软雅黑;
+    font-size: 14px;
+    color: rgb(145,145,145);
+    position: relative;
+    top: 200px;
+    left: 150px;
+}
+.need1{
+    font-family: 微软雅黑;
+    font-size: 14px;
+    color: rgb(145,145,145);
+    position: relative;
+    left: 460px;
+    top: 195px;
+}
+.fo{
+    height: 285px;
+    width: 300px;
+    background-image: url(img/foot.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    left: 116px;
+    top: 275px;
+}
+.forig{
+    width: 639px;
+    height: 258px;
+    position: relative;
+    left: 490px;
+    top: -2px;
+}
+input{
+    color: rgb(63, 62, 62);
+    background-color: rgb(237,236,236);
+    border: none;
+}
+.name{
+    width: 301px;
+    height: 35px;
+}
+#age{
+    width: 301px;
+    height: 35px;
+    position: relative;
+    left: 25px;
+}
+#tel{
+    width: 301px;
+    height: 35px;
+    position: relative;
+    top: 20px;
+}
+#addr{
+    width: 301px;
+    height: 35px;
+    position: relative;
+    top: 20px;
+    left: 25px;
+}
+#dream{
+    width: 632px;
+    height: 105px;
+    position: relative;
+    top: 40px;
+}
+#aply{
+    width: 632px;
+    height: 40px;
+    background-color: rgb(237,236,236);
+    position: relative;
+    top: 50px; 
+}
+.apply{
+    color: black;
+    font-family: 微软雅黑;
+    font-size: 17px;
+    position: relative;
+    left: 280px;
+    top: 8px;
+}
+.apply:hover{
+    cursor: pointer;
+    color: rgb(226, 67, 67);
+    transition: color 1s;
+}
+#footer{
+    width: 100%;
+    height: 358px;
+    background-color: rgb(50,53,62);
+}
+.lia{
+    color: white;
+    font-size: 25px;
+    position: relative;
+    left: 580px;
+    top: 100px;
+}
+.weil{
+    color: white;
+    font-size: 13px;
+    position: relative;
+    left: 250px;
+    top: 120px;
+}
+.yek{
+    color: white;
+    font-size: 13px;
+    position: relative;
+    left: -110px;
+    top: 135px;
+}
+#ema{
+    width: 430px;
+    height: 38px;
+    position: relative;
+    left: 350px;
+    top: 170px;
+}
+.ii{
+    color: white;
+    font-family:微软雅黑;
+    font-size: 18px;
+    position: relative;
+    left: 18px;
+    top: 5px;
+}
+#il{
+    height: 38px;
+    width: 80px;
+    background-color: rgb(111,113,120);
+    position: relative;
+    left: 780px;
+    top: 132px;
+}
+.qi{
+    height: 22px;
+    width: 22px;
+    background-image: url(img/21.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    top: 160px;
+    left: 470px;
+}
+.ge{
+    height: 22px;
+    width: 23px;
+    background-image: url(img/23.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    left: 590px;
+    top: 138px;
+
+}
+.disan{
+    height: 22px;
+    width: 23px;
+    background-image: url(img/22.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    left: 535px;
+    top: 115px;
+}
+.disi{
+    height: 22px;
+    width: 23px;
+    background-image: url(img/24.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    top: 95px;
+    left: 650px;
+}
+#end{
+    width: 100%;
+    height: 55px;
+    background-color:rgb(47,47,56);
+}
+.n20{
+    font-size: 15px;
+    font-family: 微软雅黑;
+    color: white;
+    position: relative;
+    left: 100px;
+    top: 20px;
+}
+.back{
+    font-size: 15px;
+    font-family: 微软雅黑;
+    color: white;
+    position: relative;
+    left: 1000px;
+    top: 20px;
+}

@@ -1,0 +1,269 @@
+*{
+    margin:0;
+    padding: 0;
+}
+#whole{
+    width: 100%;
+    height: 3258px;
+    /* background: rgb(245, 245, 245); */
+    background: white;
+    /* background-image: url("../image/bg.jpg"); */
+}
+#headline{
+    width: 100%;
+    height: 66px;
+    background: #fff;
+}
+#mainbody{
+    width: 100%;
+    height: 3190px;
+    background: #fff;
+    margin: 0 auto;
+}
+#login{
+    width: 100px;
+    height: 100%;
+    background: #fff;
+    float: right;
+    text-align: center;
+    line-height: 60px;
+    position: relative;
+    top: -65px;
+    left: -36px;
+}
+#registered{
+    width: 100px;
+    height: 100%;
+    background: #fff;
+    float: right;
+    text-align: center;
+    line-height: 60px;
+    position: relative;
+    top: -65px;
+    left: -36px;
+}
+.log{
+    font-size: 20px;
+    color: #ccc;
+    transition: color 1s ease;
+    
+}
+.log:hover{
+    color: pink;
+}
+.reg{
+    font-size: 20px;
+    color: #ccc;
+    transition: color 1s ease;
+}
+.reg:hover{
+    color: pink;
+}
+
+
+
+.swiper-container{
+    /* background-color: rgb(82, 119, 107); */
+    height: 510px;
+    width: 90%;
+    position: relative;
+    top: -50px;
+}
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+#logoa{
+    width: 100%;
+    height: 230px;
+    /* background: #fff; */
+}
+.logioa{
+    width: 180px;
+    position: relative;
+    left: 40%;
+    top: 10%;
+}
+.lecture{
+    width: 100%;
+    /* height: 200px; */
+    /* background:#fff; */
+    font-size: 20px;
+    color: #bbb;
+    line-height: 50px;
+    margin:auto;
+}
+#intro{
+    height: 370px;
+    width: 70%;
+    background-color: #fff;
+    margin: auto;
+}
+#video{
+    height: 480px;
+    width: 75%;
+    background-color: aquamarine;
+    margin: auto;
+}
+#separate{
+    margin-top: 50px;
+    height: 140px;
+    width: 100%;
+    background-color: #fff;
+}
+#intro_c{
+    height: 100px;
+    width: 80%;
+    background-color: #fff;
+    margin:auto;
+}
+#company{
+    height: 500px;
+    width: 90%;
+    margin: auto;
+    background-color: #fff;
+}
+.every_c{
+    height: 96%;
+    width: 32%;
+    background-color: #fff;
+    border:1px dashed #ccc;
+    float: left;
+    margin-left: 11px;
+    margin-top: 5px;
+}
+#worker{
+    height: 500px;
+    width: 90%;
+    margin: auto;
+    background-color: #fff;
+}
+.every_w{
+    height: 97%;
+    width: 24%;
+    background-color: #fff;
+    border:1px dashed #ccc;
+    float: left;
+    margin-left: 9px;
+    margin-top: 5px;
+}
+
+
+
+.company_name{
+    height: 70px;
+    width: 100%;
+    background: #fff;
+    font-size: 23px;
+    color: #bbb;
+    line-height: 70px;
+    text-align: center;
+}
+.company_pic{
+    height: 150px;
+    width: 100%;
+    background: #fff;
+}
+.c1{
+    height: 100%;
+    position: relative;
+    left: 60px;
+}
+.c2{
+    height: 100%;
+    position: relative;
+    left: 30px;
+}
+.c3{
+    height: 100%;
+    position: relative;
+    left: 75px;
+}
+.company_intro{
+    height: 220px;
+    width: 90%;
+    margin: 0 auto;
+    background: #fff;
+    font-size: 17px;
+    color: #aaa;
+    line-height: 30px;
+}
+.t1{
+    height: 100%;
+    position: relative;
+    left: 180px;
+}
+.sep{
+    height: 100%;
+    position: relative;
+    left: 90px;
+}
+.worker_name{
+    height: 70px;
+    width: 100%;
+    background: #fff;
+    font-size: 23px;
+    color: #bbb;
+    line-height: 70px;
+    text-align: center;
+}
+.worker_pic{
+    height: 150px;
+    width: 100%;
+    background: #fff;
+}
+.worker_intro{
+    height: 220px;
+    width: 90%;
+    margin: 0 auto;
+    background: #fff;
+    font-size: 16px;
+    color: #aaa;
+    line-height: 30px;
+    margin-top: 10px;
+}
+.w1{
+    height: 100%;
+    position: relative;
+    left: 40px;
+}
+.w2{
+    height: 100%;
+    position: relative;
+    left: 60px;
+}
+.w3{
+    height: 100%;
+    position: relative;
+    left: 30px;
+}
+.w4{
+    height: 100%;
+    position: relative;
+    left: 25px;
+}
+
+
+
+
+
+
+#foot{
+    height: 300px;
+    width: 100%;
+    background-color:#fff;
+    margin-top: 30px;
+}
+#footer{
+    width: 80%;
+    height: 131px;
+    margin: 0 auto;
+    background: #fff;
+}
+.footie{
+    margin-top: 30px;
+    width: 100%;
+}
+.lastfoot{
+    width: 100%;
+}

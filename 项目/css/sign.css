@@ -1,0 +1,290 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#all{
+    margin: auto;
+    height: 1000px;
+    width: 1263px;
+}
+#goto{
+    width: 100%;
+    height: 80px;
+}
+#goto>:first-child{
+    display: inline-block;
+    position: relative;
+    left: 200px;
+    top: 8px;
+}
+.p1{
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    left: 220px;
+    top: -15px;
+    margin-left: 20px;
+    color: rgb(1, 36, 21);
+}
+.p2{
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    left: 730px;
+    top: -15px;
+    margin-left: 20px;
+    color:  rgb(1, 36, 21);
+}
+.p1:hover{
+    color: rgb(255,149,120);
+    transition: all 0.5s;
+}
+.p2:hover{
+    color: rgb(255,149,120);
+    transition: all 0.5s;
+}
+#contect{
+    height: 500px;
+    width: 80%;
+    background-color: white;
+    margin: 0 auto;
+}
+#left{
+    height: 100%;
+    width: 50%;
+}
+#right{
+    height: 100%;
+    width: 50%;
+    position: relative;
+    left: 505px;
+    top: -800px;
+}
+#line{
+    height: 300px;
+    width: 3px;
+    background-color: rgb(201, 198, 198);
+    position: relative;
+    left: 503px;
+    top: -400px;
+}
+#beauty{
+    height: 100px;
+    width: 200px;
+    position: relative;
+    left: 20px;
+    top: 20px;
+}
+#word{
+    font-family: 黑体;
+    font-size: 25px;
+    color: rgb(71, 71, 71);
+    position: relative;
+    left: 120px;
+    top: -30px;
+}
+.email{
+    border-radius: 5px;
+    width: 200px;
+    height: 30px;
+    position: relative;
+    top: 30px;
+    left: 15px;
+}
+.name{
+    border-radius: 5px;
+    width: 200px;
+    height: 30px;
+    position: relative;
+    top: 60px;
+    left: 119px;
+}
+.pass{
+    border-radius: 5px;
+    width: 200px;
+    height: 30px;
+    position: relative;
+    top: 125px;
+    left: -90px;
+}
+.sex{
+    position: relative;
+    top: 180px;
+    left: -295px;
+}
+.se{
+    font-size: 14px;
+    position: relative;
+    top: 180px;
+    left: -295px;
+}
+#now{
+    border-radius: 7px;
+    height: 45px;
+    width: 130px;
+    position: relative;
+    top: 240px;
+    left: 120px;
+}
+.now{
+    font-size: 12px;
+    color: white;
+    position: relative;
+}
+.check{
+    height: 15px;
+    width: 15px;
+    position: relative;
+    top: 180px;
+    left: -12px;
+}
+.agree{
+    position: relative;
+    top: 177px;
+    left: -10px;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+}
+.use{
+    position: relative;
+    top: 85px;
+    left: 60px;
+}
+#lo{
+    color: rgb(255,149,120);
+    position: relative;
+    top: 85px;
+    left: 60px;
+}
+#lo:hover{
+    cursor: pointer;
+    color: rgb(250, 25, 104);
+}
+.other{
+    position: relative;
+    top: 115px;
+    left: -62px;
+    font-size: 13px;
+}
+.qiguai{
+    height: 100px;
+    width: 280px;
+    background-image: url(../img/qiguai.png);
+    background-repeat: no-repeat;
+    position: relative;
+    left: 60px;
+    top: 190px;
+}
+#foot{
+    height: 430px;
+    width: 100%;
+    background-color: rgb(211, 208, 208);
+}
+.lia{
+    font-size: 25px;
+    position: relative;
+    left: 580px;
+    top: 100px;
+}
+.weil{
+    font-size: 13px;
+    position: relative;
+    left: 250px;
+    top: 120px;
+}
+.yek{
+    font-size: 13px;
+    position: relative;
+    left: -110px;
+    top: 135px;
+}
+#ema{
+    width: 430px;
+    height: 38px;
+    position: relative;
+    left: 350px;
+    top: 170px;
+    outline: none;
+}
+.ii{
+    color: white;
+    font-family:微软雅黑;
+    font-size: 16px;
+    position: relative;
+    left: 23px;
+    top: 10px;
+    cursor: pointer;
+}
+#il{
+    height: 42px;
+    width: 80px;
+    background-color: rgb(111,113,120);
+    position: relative;
+    left: 784px;
+    top: 128px;
+}
+.qi{
+    height: 22px;
+    width: 22px;
+    background-image: url(../img/21.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    top: 160px;
+    left: 470px;
+}
+.ge{
+    height: 22px;
+    width: 23px;
+    background-image: url(../img/23.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    left: 590px;
+    top: 138px;
+
+}
+.disan{
+    height: 22px;
+    width: 23px;
+    background-image: url(../img/22.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    left: 535px;
+    top: 115px;
+}
+.disi{
+    height: 22px;
+    width: 23px;
+    background-image: url(../img/24.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    top: 95px;
+    left: 650px;
+}
+#end{
+    width: 100%;
+    height: 55px;
+    position: relative;
+    top: -100px;
+}
+.n20{
+    font-size: 15px;
+    font-family: 微软雅黑;
+    position: relative;
+    left: 220px;
+}
+.back{
+    color: rgb(255,149,120);
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 微软雅黑;
+    position: relative;
+    left: 800px;
+}
+.back:hover{
+    color: rgb(233, 122, 92);
+    transition: all 0.3s;
+}

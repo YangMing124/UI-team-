@@ -1,0 +1,31 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+.box{
+    background-color: rgb(131, 138, 120);
+	margin: 0 0 55px;
+    display: flex;
+}
+.box-item{
+    height: 200px;
+    width: 200px;
+    background: yellowgreen;
+    font-size: 50px;
+    text-align: center;
+    line-height: 200px;
+    vertical-align: middle;
+    margin: 10px;
+}
+.box-1{
+    flex-direction: row;
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+}
+.box-2{
+    flex-direction: row;
+    /* flex-wrap: nowrap; */
+    /* flex-wrap: wrap; */
+    /* flex-wrap: wrap-reverse; */
+}

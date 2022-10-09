@@ -1,0 +1,34 @@
+#father{
+    width: 300px;
+    height: 310px;
+    background: #fff;
+    margin: auto;
+}
+a{
+    width: 300px;
+    height: 310px;
+    float: left;
+}
+a:link > #children_one{
+    background: green;   
+}
+a:visited > #children_one{
+    background: yellow;   
+}
+a:hover > #children_one{
+    background: blue;   
+}
+a:active > #children_one{
+    background: red;   
+}
+a::after{
+    background: yellow;
+}
+/*L V H A*/
+#children_one{
+    height: 10px;
+}
+#children_two{
+    height: 300px;
+    background: pink;
+}

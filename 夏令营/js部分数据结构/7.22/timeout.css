@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#all{
+    height: 200px;
+    width: 420px;
+    background-color: aquamarine;
+    margin: auto;
+    margin-top: 100px;
+}
+.aaa{
+    float: left;
+    font-size: 11px;
+    text-align: center;
+    color: white;
+}

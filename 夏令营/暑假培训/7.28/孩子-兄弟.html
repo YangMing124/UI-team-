@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var record=null;
+    function Node(data){
+        this.child=null;
+        this.data=data;
+        this.sibling=null;
+        this.parent=null;
+    }
+    function BST(){
+        this.root=new Node("root");
+        this.root.parent=this.root;
+        this.Find=Find;
+        this.Insert=Insert;
+        this.Delete=Delete;
+        // this.show=show;
+        this.Middle=Middle;//中序遍历
+    }
+    function Find(key,node){
+        if(key&&node!=key.data){
+            Find(key.child,node);
+            Find(key.sibling,node);
+        }
+        if(key&&node==key.data){
+            console.log(key);
+            record=key;
+        }
+        if(record!=null){
+            return true;
+        }
+    }
+    function Insert(parentnode,childnode){
+        if(Find(this.root,parentnode)){
+            var node=new Node(childnode);
+            node.parent=record;
+            var baby=record.child;
+            console.log(baby);
+            if(baby!=null){
+                while(baby.sibling!=null){
+                    baby=baby.sibling;
+                }
+                baby.sibling=node;
+            }
+            else{
+                record.child=node;
+            }
+        }
+        record="";
+        console.log(this.root);
+    }
+    function Delete(node){
+        if(Find(this.root,node)){
+            var baby=record.parent.child;
+            // console.log(baby);
+            // console.log(baby.sibling);
+            if(baby.data!=node){
+                while(baby.sibling!=node){
+                    baby=baby.sibling;
+                }
+                baby=baby.sibling.sibling;
+            }
+            else{
+                baby=baby.sibling;
+            }
+        }
+        // console.log(baby);
+    }
+    function Middle(node){
+        if(node){
+            Middle(node.child);
+            console.log(node.data);
+            Middle(node.sibling);
+        }
+    }
+    function show(node){
+        Find(this.root,node);
+        
+    }
+    var p=new BST();
+    p.Insert("root",2);
+    p.Insert("root",3);
+    p.Insert(2,6);
+    p.Insert(2,7);
+    p.Delete(6);
+    p.Middle("root");
+</script>
+</html>

@@ -1,0 +1,192 @@
+*{
+    padding: 0;
+    margin:0;
+}
+#first{
+    margin: 200px auto;
+    /* margin-top: 200px; */
+    width: 790px;
+    height: 340px;
+    overflow: hidden;
+}
+input{
+    display: none;
+}
+ul{
+    width: 3950px;
+    height: 340px;
+    -webkit-animation: myfirst 10s ease infinite;
+}
+li{
+    width: 790px;
+    height: 340px;
+    float: left;
+    list-style: none;
+    text-align: center;
+    line-height: 340px;
+}
+#second{
+    margin: auto;
+    margin-top: -50px;
+    height: 30px;
+    width: 180px;
+    border-radius: 10px;
+    line-height: 15px;
+    background-color: rgba(255,255,255,5);
+}
+label{
+    height: 10px;
+    width: 10px;
+    float: left;
+    border: 1px solid rgb(179, 178, 178);
+    background-color: rgb(179, 178, 178);
+    border-radius: 15px;
+    margin: 10px;
+    position: relative;
+    top: -250px;
+    left: 590px;
+    text-align: center;
+    cursor: pointer; 
+}
+@-webkit-keyframes myfirst{
+    0%{
+        margin-left: 0px;
+    }
+    20%{
+        margin-left: -790px;
+    }
+    40%{
+        margin-left: -1580px;
+    }
+    60%{
+        margin-left: -2370px;
+    }
+    80%{
+        margin-left: -3160px;
+    }
+    100%{
+        margin-left: 0px;
+    }
+}
+#radio1:checked~#first #photo{
+    animation-name: myfirst;
+    margin-left: 0px;
+}
+#radio2:checked~#first #photo{
+    animation-name: myfirst1;
+    margin-left: -790px;
+}
+#radio3:checked~#first #photo{
+    animation-name: myfirst2;
+    margin-left: -1580px;
+}
+#radio4:checked~#first #photo{
+    animation-name: myfirst3;
+    margin-left: -2370px;
+}
+#radio5:checked~#first #photo{
+    animation-name: myfirst4;
+    margin-left: -3160px;
+}
+@-webkit-keyframes myfirst1{
+   
+    0%{
+        margin-left: -790px;
+    }
+    20%{
+        margin-left: -1580px;
+    }
+    40%{
+        margin-left: -2370px;
+    }
+    60%{
+        margin-left: -3160px;
+    }
+    80%{
+        margin-left: 0px;
+    }
+    100%{
+        margin-left: -790px;
+    }
+}
+@-webkit-keyframes myfirst2{
+    0%{
+        margin-left: -1580px;
+    }
+    20%{
+        margin-left: -2370px;
+    }
+    50%{
+        margin-left: -3160px;
+    }
+    60%{
+        margin-left: 0px;
+    }
+    80%{
+        margin-left: -790px;
+    }
+    100%{
+        margin-left: -1580px;
+    }
+}
+@-webkit-keyframes myfirst3{
+    0%{
+        margin-left: -2370px;
+    }
+    20%{
+        margin-left: -3160px;
+    }
+    40%{
+        margin-left: 0px;
+    }
+    60%{
+        margin-left: -790px;
+    }
+    80%{
+        margin-left: -1580px;
+    }
+    100%{
+        margin-left: -2370px;
+    }
+}
+@-webkit-keyframes myfirst4{
+    
+    0%{
+        margin-left: -3160px;
+    }
+    20%{
+        margin-left: 0px;
+    }
+    40%{
+        margin-left: -790px;
+    }
+    60%{
+        margin-left: -1580px;
+    }
+    80%{
+        margin-left: -2360px;
+    }
+    100%{
+        margin-left: -3160px;
+    }
+}
+#radio1:active~#first #photo{
+    animation-name: none;
+    margin-left: 0px;
+}
+#radio2:active~#first #photo{
+    animation-name: none;
+    margin-left: -790px;
+}
+#radio3:active~#first #photo{
+    animation-name: none;
+    margin-left: -1580px;
+}
+#radio4:active~#first #photo{
+    animation-name: none;
+    margin-left: -2370px;
+}
+#radio5:active~#first #photo{
+    animation-name: none;
+    margin-left: -3160px;
+}

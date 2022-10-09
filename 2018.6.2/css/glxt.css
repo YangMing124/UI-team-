@@ -1,0 +1,179 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+input{
+    outline: none;
+}
+button{
+    outline: none;
+}
+#body{
+    width: 1278px;
+    height: 614px;
+    background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+}
+#all{
+    margin: auto;
+    width: 980px;
+    height: 614px;
+    background-color: rgb(255, 255, 255);
+}
+.title{
+    color: rgb(102, 101, 101);
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    height: 40px;
+    width: 66%;
+    margin-left: 17%;
+    border-bottom: 1px dashed grey;
+}
+#buttons{
+    width: 100%;
+    height: 85px;
+    /* background-color: darksalmon; */
+}
+.write{
+    height: 20px;
+    width: 80px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: rgb(255, 249, 249);
+    float: left;
+}
+.b{
+    font-size: 13px;
+    font-family: 微软雅黑;
+    color: rgb(218, 19, 19);
+    height: 25px;
+    width: 80px;
+    float: left;
+    margin-top: 47px;
+    margin-left: 15px;
+    border: 1px solid red;
+    background-color: white;
+    cursor: pointer;
+}
+.b1{
+    margin-left: -600px;
+}
+.b2{
+    margin-left: -485px;
+}
+.b3{
+    margin-left: -360px;
+}
+.b4{
+    position: relative;
+    left: -263px;
+}
+.b5{
+    position: relative;
+    left: -250px;
+}
+.w1{
+    margin-left: 190px;
+}
+.w2{
+    margin-left: 40px;
+}
+.w3{
+    margin-left: 40px;
+}
+.b6 {
+    margin-top: -25px;
+    margin-left: 735px;
+}
+.b:hover{
+    color: white;
+    background-color: rgb(250, 59, 59);
+    transition: all 0.5s;
+}
+.tips{
+    height: 30px;
+    width: 80%;
+    /* background-color: yellowgreen; */
+    margin-left: 10%;
+}
+.tips p{
+    width: 100px;
+    height: 30px;
+    /* background-color: darkmagenta; */
+    display: inline-block;
+    margin-left: 12px;
+    font-size: 15px;
+    text-align: center;
+    line-height: 30px;
+    color: rgb(73, 73, 73);
+}
+.tips button{
+    font-size: 13px;
+    font-family: 微软雅黑;
+    color: rgb(218, 19, 19);
+    height: 25px;
+    width: 84px;
+    background-color: silver;
+    display: inline-block;
+    margin-left: 25px;
+    margin-top: 2px;
+    border: 1px solid red;
+    background-color: white;
+    cursor: pointer;
+}
+.allcheck:hover{
+    color: white;
+    background-color: rgb(250, 59, 59);
+    transition: all 0.5s;
+}
+#contents{
+    margin: auto;
+    height: 457px;
+    width: 80%;
+    /* background-color: tomato; */
+    overflow: auto;
+}
+#hh{
+    height: 35px;
+    width: 100%;
+    /* background-color: rgb(0, 153, 255); */
+}
+
+#check{
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    position: relative;
+    left: 48px;
+    top: 3px;
+}
+#one,#two,#three,#four,#five{
+    height: 35px;
+    width: 80px;
+    /* background-color: darkmagenta; */
+    display: inline-block;
+    font-size: 15px;
+    color: rgb(73, 73, 73);
+    line-height: 35px;
+    text-align: center;
+} 
+.bb{
+    display: inline-block;
+    margin-left: 695px;
+    margin-top: -30px;
+}
+#one{
+    margin-left: 107px;
+}
+#two{
+    margin-left: 40px;
+}
+#three{
+    margin-left: 35px;
+}
+#four{
+    margin-left: 40px;
+}
+#five{
+    margin-left: 30px;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function dictionary(){
+        this.add=add;
+        this.datastore=[];
+        this.find=find;
+        this.dele=dele;
+        this.showAll=showAll;
+        this.count=count;
+        this.clear=clear;
+        this.allsort=allsort;
+    }
+    function add(key,item){
+        this.datastore[key]=item;
+    }
+    function find(key){
+       return this.datastore[key];
+    }
+    function dele(key){
+        delete this.datastore[key];
+    }
+    function showAll() {
+        for(var key in this.datastore) {//for in循环
+            console.log(key +' : '+ this.datastore[key]+';');
+        }
+    }
+    function count(){
+        var i=1;
+        for(var key in this.datastore) {//for in循环
+            i++;
+        }
+        console.log(i);
+    }
+    function clear(){
+        for(var key in this.datastore){
+            delete this.datastore[key];
+        }
+    }
+    function allsort(){
+        for(var i in Object.keys(this.datastore).sort()){
+            var key=Object.keys(this.datastore).sort();
+        }
+        console.log(key +' : '+ this.datastore[key]+';');  
+    }
+    var p=new dictionary();
+    p.add('a',1);
+    p.add('c',2);
+    p.add('b',3);
+    p.add('d',4);
+    p.showAll();
+    var str=p.find('a');
+    console.log(str);
+    p.dele('c');
+    p.showAll();
+    p.count();
+    //p.clear();
+    p.allsort();
+    p.showAll();
+</script>
+</html>

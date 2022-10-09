@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="timeout.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="all">
+
+    </div>
+</body>
+<script>
+     // var time=null;
+    // var get=document.getElementById("all");
+    // var aa=[34,62,12,5,87,90,44,36,28,76];
+    // function swap(a,i,j,f){
+    //     var temp=a[i];
+    //     a[i]=a[j];
+    //     a[j]=temp;
+    //     time=setTimeout(function move(){
+    //         var temp=aa[i];
+    //         aa[i]=aa[j];
+    //         aa[j]=temp;
+    //         get.innerHTML="";
+    //         for(var m=0;m<a.length;m++){
+    //             get=document.getElementById("all");
+    //             var b=document.createElement("div");
+    //             b.style.width=20+'px';
+    //             b.style.height=aa[m]+10+'px';
+    //             b.style.background="lightpink";
+    //             b.innerHTML=aa[m];
+    //             b.style.marginLeft = 20 +'px';
+    //             b.style.marginTop=150-aa[m]+'px';
+    //             b.className="aaa"
+    //             get.appendChild(b);
+    //         }
+    //     },1000*f);
+    // }
+    // var f=0;
+    // var a=[34,62,12,5,87,90,44,36,28,76];
+    // for(var i=0;i<a.length-1;i++){
+    //     for(var j=i;j<a.length;j++){
+    //        if(a[i]>a[j]){
+    //             swap(a,i,j,f);
+    //        }
+    //     }
+    //     f++;
+    // }
+    var time=null;
+    var get=document.getElementById("all");
+    var cc=[52,42,71,23,84,12,65,3,34,90];
+    function swap(c,i,j,f){
+        var temp=c[j];
+            c[j]=c[j-1];
+            c[j-1]=temp;
+        time=setTimeout(function move(){
+            var temp=cc[j];
+            cc[j]=cc[j-1];
+            cc[j-1]=temp;
+            get.innerHTML="";
+            for(var m=0;m<c.length;m++){
+                get=document.getElementById("all");
+                var b=document.createElement("div");
+                b.style.width=20+'px';
+                b.style.height=cc[m]+10+'px';
+                b.style.background="lightpink";
+                b.innerHTML=cc[m];
+                b.style.marginLeft = 20 +'px';
+                b.style.marginTop=150-cc[m]+'px';
+                b.className="aaa"
+                get.appendChild(b);
+            }
+        },1000*f);
+    }
+    var f=0;
+    var c=[52,42,71,23,84,12,65,3,34,90];
+    var j;
+    for(var i=0;i<c.length-1;i++){
+        for(var j=i;c[j]<c[j-1];j--){
+           swap(c,i,j,f);
+        }
+        f++;
+    }
+    
+</script>
+</html>

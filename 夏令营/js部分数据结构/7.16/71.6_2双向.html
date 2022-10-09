@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>双向</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function node(data){
+        this.data=data;
+        this.prev=null;
+        this.next=null;
+    }
+    function list(){
+        this.head=new node("head");
+        this.find=find;
+        this.insert=insert;
+        this.insertbehind=insertbehind
+        this.remove=remove;
+        this.show=show;
+    }
+    function find(data){
+        var code=this.head;
+        while(code!=null&&code.data!=data)
+        {
+            code=code.next;
+        }
+        return code;
+    }
+    function insertbehind(data,other)
+    {
+        var code1=new node(data);
+        var code2=this.find(other);
+        if(code1.prev!=null)
+            code2.prev=code1;
+        code1.next=code2.prev;//新的节点在想插的前面
+        code1.prev=code2.prev.prev;//新节点的前一个是原来的再前一个
+        code2.prev.prev.next=code1;
+    }
+    function insert(data,other)
+    {
+        var code1=new node(data);
+        var code2=this.find(other);
+        code1.next=code2.next;
+        code1.prev=code2;
+        code2.next=code1;
+        if(code1.next!=null)
+            code1.next.prev=code1;
+    }
+    function remove(data){
+        var temp=this.find(data);
+        temp.prev.next=temp.next;
+        temp.next.prev=temp.prev;
+    }
+    function show(){
+        var code=this.head;
+        while(code)
+        {
+            console.log(code.data);
+            code=code.next;
+        }
+    }
+    var l=new list();
+    l.insert("a","head");
+    l.insert("g","a");
+    l.insertbehind("d","g");
+    l.insert("b","d");
+    l.show();
+    l.remove("d");
+    l.show();
+    l.insert("h","b");
+    l.show();
+</script>
+</html>

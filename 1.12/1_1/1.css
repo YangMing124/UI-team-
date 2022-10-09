@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#all{
+    height: 600px;
+    width: 550px;
+    background-color: rgb(204, 204, 175);
+    margin: 0 auto;
+}
+
+.left1{
+    height: 65px;
+    width: 75px;
+    background-color: #ffffff;
+    border-bottom: 1px solid rgb(233,233,233);
+    position: relative;
+}
+.left2{
+    height: 65px;
+    width: 200px;
+    background-color:#ffffff;
+    border-bottom: 1px solid rgb(255,119,9);
+    position: relative;
+    left: 75px;
+    top: -66px;
+}
+.shop{
+    font-size: 18px;
+    font-family: 黑体;color:rgb(255,119,9);
+    position: relative;
+    top: 20px;
+    left: 35px;
+}
+.right2{
+    height: 65px;
+    width: 75px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(233,233,233);
+    position: relative;
+    top: -198px;
+    left: 475px;
+}
+.right1{
+    height: 65px;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(233,233,233);
+    position: relative;
+    top: -132px;
+    left: 275px;
+}
+.persion{
+    font-size: 18px;
+    font-family: 黑体;color:#000;
+    position: relative;
+    top: 20px;
+    left: 35px;
+}
+.head{
+    height: 40px;
+    width: 550px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    top: -198px;
+}
+#left{
+    text-align: right; 
+    height:495px;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    top: -199px;
+}
+#right{
+    height: 495px;
+    width: 350px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    top:-694px;
+    left: 200px;
+}
+#footer{
+    width: 350px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    top: 150px;
+}
+.top{
+    font-family: 微软雅黑;color: #000;
+    font-size: 10px;
+    position: relative;
+    top: 2px;
+    left: 13px;
+}
+.point{
+    color: red;
+    position: relative;
+    top: 17px;
+}
+.else{
+    font-size: 14px;
+    font-family: 方正书宋简体;color:rgb(68, 67, 67);
+    position: relative;
+    top: 15px;
+}
+.fir{
+    padding-right: 25px;
+    position: relative;
+    top: 15px;
+}
+.sec{
+    padding-right: 25px;
+    position: relative;
+    top: 35px;
+}
+.thr{
+    padding-right: 25px;
+    position: relative;
+    top: 52px;
+}
+.fou{
+    padding-right: 25px;
+    position: relative;
+    top: 70px;
+}
+.fif{
+    padding-right: 25px;
+    position: relative;
+    top: 90px;
+}
+.six{
+    padding-right: 25px;
+    position: relative;
+    top: 107px;
+}
+.sev{
+    padding-right: 25px;
+    position: relative;
+    top: 126px;
+}
+.want{
+    font-family: 方正书宋简体;color:rgb(68, 67, 67);
+    font-size: 13px;
+    position: relative;
+    top: 105px;
+}
+.ph{
+    position: relative;
+    top: 130px;
+}
+.im{
+    width: 200px;
+    height: 28px;
+    position: relative;
+    top: 145px;
+    right: 2px;
+}
+.me{
+    height: 25px;
+    width: 25px;
+}
+.agree{
+    font-family: 方正书宋简体;color: #000;
+    font-size: 11px;
+    position: relative;
+    top: -15px;
+}
+.aliba{
+    font-family: 方正书宋简体;color: #ff6000;
+    font-size: 11px;
+    position: relative;
+    top: -19px;
+    left: 30px;
+}
+.ali{
+    font-family: 方正书宋简体;color: #000;
+    font-size: 11px;
+    position: relative;
+    top: -19px;
+    left: 30px;
+}
+.butto{
+    font-family: coibel;color: #ffffff;
+    height: 35px;
+    width: 120px;
+    position: relative;
+    top: 20px;
+    right: 197px;
+    background-color: #ff6200;
+}
